@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Technology is a means, not an end • Posts by &#34;centos&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2020-03-17T07:14:00.000Z</updated>
+    <category term="hbase" />
+    <category term="ntpdate" />
+    <category term="nlp" />
+    <category term="torchtext" />
+    <category term="python" />
+    <category term="vmware" />
+    <category term="macos" />
+    <category term="hive" />
+    <category term="hadoop" />
+    <category term="centos" />
+    <category term="java" />
+    <category term="mapreduce" />
+    <category term="cpasule" />
+    <category term="paper" />
+    <entry>
+        <id>http://example.com/2020/03/17/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/</id>
+        <title>安装hive时jline版本不一致问题</title>
+        <link rel="alternate" href="http://example.com/2020/03/17/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/"/>
+        <content type="html">&lt;h1 id=&#34;1-问题描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-问题描述&#34;&gt;#&lt;/a&gt; 1. 问题描述&lt;/h1&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;将hive包解压后，运行bin目录下的hive脚本，报以下错误：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[ERROR] Terminal initialization failed; falling back to unsupported&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;java.lang.IncompatibleClassChangeError: Found class jline.Terminal, but interface was expected&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	at jline.TerminalFactory.create(TerminalFactory.java:101)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;2-错误的原因&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-错误的原因&#34;&gt;#&lt;/a&gt; 2. 错误的原因&lt;/h1&gt;
+&lt;p&gt;Hadoop jline 版本和 hive 的 jline 不一致&lt;/p&gt;
+&lt;h1 id=&#34;3-解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-解决方法&#34;&gt;#&lt;/a&gt; 3. 解决方法&lt;/h1&gt;
+&lt;p&gt;删除 your_install_path/hadoop/share/hadoop/yarn/lib 目录下的 jline 包，然后把 hive 里面的 jline 包拷过来。&lt;/p&gt;
+</content>
+        <category term="hive" />
+        <category term="hadoop" />
+        <category term="centos" />
+        <updated>2020-03-17T07:14:00.000Z</updated>
+    </entry>
+</feed>
