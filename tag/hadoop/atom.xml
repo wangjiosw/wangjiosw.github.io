@@ -6,9 +6,6 @@
     <updated>2020-03-17T07:14:00.000Z</updated>
     <category term="hbase" />
     <category term="ntpdate" />
-    <category term="nlp" />
-    <category term="torchtext" />
-    <category term="python" />
     <category term="vmware" />
     <category term="macos" />
     <category term="hive" />
@@ -16,6 +13,9 @@
     <category term="centos" />
     <category term="java" />
     <category term="mapreduce" />
+    <category term="nlp" />
+    <category term="torchtext" />
+    <category term="python" />
     <category term="cpasule" />
     <category term="paper" />
     <entry>

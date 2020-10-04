@@ -9,9 +9,6 @@
         <lastBuildDate>Sat, 29 Feb 2020 21:25:00 +0800</lastBuildDate>
         <category>hbase</category>
         <category>ntpdate</category>
-        <category>nlp</category>
-        <category>torchtext</category>
-        <category>python</category>
         <category>vmware</category>
         <category>macos</category>
         <category>hive</category>
@@ -19,6 +16,9 @@
         <category>centos</category>
         <category>java</category>
         <category>mapreduce</category>
+        <category>nlp</category>
+        <category>torchtext</category>
+        <category>python</category>
         <category>cpasule</category>
         <category>paper</category>
         <item>
