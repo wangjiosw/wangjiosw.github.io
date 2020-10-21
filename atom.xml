@@ -6,7 +6,7 @@
   <link href="https://wangjiosw.github.io/atom.xml" rel="self"/>
   
   <link href="https://wangjiosw.github.io/"/>
-  <updated>2020-10-21T03:06:20.884Z</updated>
+  <updated>2020-10-21T03:20:27.114Z</updated>
   <id>https://wangjiosw.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac 单机集群使用hadoop jar 运行jar包出现的问题</title>
+    <link href="https://wangjiosw.github.io/2020/10/21/bigdata/mac-hadoop-jar-problem/"/>
+    <id>https://wangjiosw.github.io/2020/10/21/bigdata/mac-hadoop-jar-problem/</id>
+    <published>2020-10-21T03:19:00.000Z</published>
+    <updated>2020-10-21T03:20:27.114Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-问题描述"><a class="markdownIt-Anchor" href="#1-问题描述">#</a> 1. 问题描述</h1><p>Mac 单机集群使用 hadoop jar 运行 jar 包报错：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Exception in thread &quot;main&quot; java.io.IOException: Mkdirs failed to create /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/hadoop-unjar7560830407203462827/META-INF/license</span><br><span class="line">at org.apache.hadoop.util.RunJar.ensureDirectory(RunJar.java:128)</span><br><span class="line">at org.apache.hadoop.util.RunJar.unJar(RunJar.java:104)</span><br><span class="line">at org.apache.hadoop.util.RunJar.unJar(RunJar.java:81)</span><br><span class="line">at org.apache.hadoop.util.RunJar.run(RunJar.java:209)</span><br><span class="line">at org.apache.hadoop.util.RunJar.main(RunJar.java:136)</span><br></pre></td></tr></table></figure><h1 id="2-解决方法"><a class="markdownIt-Anchor" href="#2-解决方法">#</a> 2. 解决方法</h1><p>Only thrown in MacOS, and solution is:<br>@see: <a href="http://stackoverflow.com/questions/10522835/hadoop-java-io-ioexception-mkdirs-failed-to-create-some-path">http://stackoverflow.com/questions/10522835/hadoop-java-io-ioexception-mkdirs-failed-to-create-some-path</a></p><ol><li>modify jar</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> zip -d mipr-core-0.1-jar-with-dependencies.jar META-INF/LICENSE</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> zip -d mipr-core-0.1-jar-with-dependencies.jar LICENSE</span></span><br></pre></td></tr></table></figure><ol start="2"><li>with grep all</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> jar -tvf mipr-core-0.1-jar-with-dependencies.jar |grep META-INF/LICENSE</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-问题描述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-问题描述&quot;&gt;#&lt;/a&gt; 1. 问题描述&lt;/h1&gt;
+&lt;p&gt;Mac 单机集群使用 hadoop jar 运行 jar 包报错：&lt;/p&gt;
+&lt;figure class=&quot;highl</summary>
+      
+    
+    
+    
+    <category term="大数据" scheme="https://wangjiosw.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+    
+    <category term="macos" scheme="https://wangjiosw.github.io/tags/macos/"/>
+    
+    <category term="mapreduce" scheme="https://wangjiosw.github.io/tags/mapreduce/"/>
+    
+  </entry>
   
   <entry>
     <title>使用fastjson时堆溢出</title>

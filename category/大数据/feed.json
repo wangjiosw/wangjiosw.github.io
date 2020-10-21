@@ -5,6 +5,17 @@
     "home_page_url": "https://wangjiosw.github.io",
     "items": [
         {
+            "id": "https://wangjiosw.github.io/2020/10/21/bigdata/mac-hadoop-jar-problem/",
+            "url": "https://wangjiosw.github.io/2020/10/21/bigdata/mac-hadoop-jar-problem/",
+            "title": "Mac 单机集群使用hadoop jar 运行jar包出现的问题",
+            "date_published": "2020-10-21T03:19:00.000Z",
+            "content_html": "<h1 id=\"1-问题描述\"><a class=\"markdownIt-Anchor\" href=\"#1-问题描述\">#</a> 1. 问题描述</h1>\n<p>Mac 单机集群使用 hadoop jar 运行 jar 包报错：</p>\n<figure class=\"highlight shell\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">Exception in thread &quot;main&quot; java.io.IOException: Mkdirs failed to create /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/hadoop-unjar7560830407203462827/META-INF/license</span><br><span class=\"line\">at org.apache.hadoop.util.RunJar.ensureDirectory(RunJar.java:128)</span><br><span class=\"line\">at org.apache.hadoop.util.RunJar.unJar(RunJar.java:104)</span><br><span class=\"line\">at org.apache.hadoop.util.RunJar.unJar(RunJar.java:81)</span><br><span class=\"line\">at org.apache.hadoop.util.RunJar.run(RunJar.java:209)</span><br><span class=\"line\">at org.apache.hadoop.util.RunJar.main(RunJar.java:136)</span><br></pre></td></tr></table></figure>\n<h1 id=\"2-解决方法\"><a class=\"markdownIt-Anchor\" href=\"#2-解决方法\">#</a> 2. 解决方法</h1>\n<p>Only thrown in MacOS, and solution is:<br>\n@see: <a href=\"http://stackoverflow.com/questions/10522835/hadoop-java-io-ioexception-mkdirs-failed-to-create-some-path\">http://stackoverflow.com/questions/10522835/hadoop-java-io-ioexception-mkdirs-failed-to-create-some-path</a></p>\n<ol>\n<li>modify jar</li>\n</ol>\n<figure class=\"highlight shell\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"meta\">$</span><span class=\"bash\"> zip -d mipr-core-0.1-jar-with-dependencies.jar META-INF/LICENSE</span></span><br><span class=\"line\"><span class=\"meta\">$</span><span class=\"bash\"> zip -d mipr-core-0.1-jar-with-dependencies.jar LICENSE</span></span><br></pre></td></tr></table></figure>\n<ol start=\"2\">\n<li>with grep all</li>\n</ol>\n<figure class=\"highlight shell\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"meta\">$</span><span class=\"bash\"> jar -tvf mipr-core-0.1-jar-with-dependencies.jar |grep META-INF/LICENSE</span></span><br></pre></td></tr></table></figure>",
+            "tags": [
+                "macos",
+                "mapreduce"
+            ]
+        },
+        {
             "id": "https://wangjiosw.github.io/2020/03/30/bigdata/Hbase%E5%88%9B%E5%BB%BA%E8%A1%A8%E5%87%BA%E9%94%99/",
             "url": "https://wangjiosw.github.io/2020/03/30/bigdata/Hbase%E5%88%9B%E5%BB%BA%E8%A1%A8%E5%87%BA%E9%94%99/",
             "title": "Hbase创建表出错",
