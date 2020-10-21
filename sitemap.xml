@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wangjiosw.github.io/2020/02/29/deep-learning/torchtext_use/</loc>
+    
+    <lastmod>2020-10-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wangjiosw.github.io/2020/10/21/java/jvm/fastjson-heap-oom/</loc>
     
     <lastmod>2020-10-21</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://wangjiosw.github.io/404.html</loc>
     
     <lastmod>2020-10-21</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wangjiosw.github.io/2020/02/29/deep-learning/torchtext_use/</loc>
-    
-    <lastmod>2020-10-04</lastmod>
     
   </url>
   
