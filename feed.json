@@ -32,7 +32,7 @@
             "url": "https://wangjiosw.github.io/2020/10/20/bigdata/hive/dbeaver-hive-connect/",
             "title": "DBeaver连接hive需要的驱动jar包",
             "date_published": "2020-10-20T03:46:00.000Z",
-            "content_html": "<p><a href=\"/images/bigdata/hive/dbeaver/\">下载地址</a></p>\n",
+            "content_html": "<p><a href=\"https://github.com/wangjiosw/wangjiosw.github.io/tree/master/images/bigdata/hive/dbeaver\">下载地址</a></p>\n",
             "tags": [
                 "hive",
                 "hadoop",
