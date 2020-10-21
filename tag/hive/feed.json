@@ -5,11 +5,23 @@
     "home_page_url": "https://wangjiosw.github.io",
     "items": [
         {
-            "id": "https://wangjiosw.github.io/2020/03/17/bigdata/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/",
-            "url": "https://wangjiosw.github.io/2020/03/17/bigdata/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/",
+            "id": "https://wangjiosw.github.io/2020/10/20/bigdata/hive/dbeaver-hive-connect/",
+            "url": "https://wangjiosw.github.io/2020/10/20/bigdata/hive/dbeaver-hive-connect/",
+            "title": "DBeaver连接hive需要的驱动jar包",
+            "date_published": "2020-10-20T03:46:00.000Z",
+            "content_html": "<p><a href=\"/images/bigdata/hive/dbeaver/\">下载地址</a></p>\n",
+            "tags": [
+                "hive",
+                "hadoop",
+                "centos"
+            ]
+        },
+        {
+            "id": "https://wangjiosw.github.io/2020/03/17/bigdata/hive/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/",
+            "url": "https://wangjiosw.github.io/2020/03/17/bigdata/hive/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/",
             "title": "安装hive时jline版本不一致问题",
             "date_published": "2020-03-17T07:14:00.000Z",
-            "content_html": "<h1 id=\"1-问题描述\"><a class=\"markdownIt-Anchor\" href=\"#1-问题描述\">#</a> 1. 问题描述</h1>\n<figure class=\"highlight plain\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">将hive包解压后，运行bin目录下的hive脚本，报以下错误：</span><br><span class=\"line\">[ERROR] Terminal initialization failed; falling back to unsupported</span><br><span class=\"line\">java.lang.IncompatibleClassChangeError: Found class jline.Terminal, but interface was expected</span><br><span class=\"line\">\tat jline.TerminalFactory.create(TerminalFactory.java:101)</span><br></pre></td></tr></table></figure>\n<h1 id=\"2-错误的原因\"><a class=\"markdownIt-Anchor\" href=\"#2-错误的原因\">#</a> 2. 错误的原因</h1>\n<p>Hadoop jline 版本和 hive 的 jline 不一致</p>\n<h1 id=\"3-解决方法\"><a class=\"markdownIt-Anchor\" href=\"#3-解决方法\">#</a> 3. 解决方法</h1>\n<p>删除 your_install_path/hadoop/share/hadoop/yarn/lib 目录下的 jline 包，然后把 hive 里面的 jline 包拷过来。</p>\n",
+            "content_html": "<h1 id=\"1-问题描述\"><a class=\"markdownIt-Anchor\" href=\"#1-问题描述\"></a> 1. 问题描述</h1>\n<figure class=\"highlight plain\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">将hive包解压后，运行bin目录下的hive脚本，报以下错误：</span><br><span class=\"line\">[ERROR] Terminal initialization failed; falling back to unsupported</span><br><span class=\"line\">java.lang.IncompatibleClassChangeError: Found class jline.Terminal, but interface was expected</span><br><span class=\"line\">\tat jline.TerminalFactory.create(TerminalFactory.java:101)</span><br></pre></td></tr></table></figure>\n<h1 id=\"2-错误的原因\"><a class=\"markdownIt-Anchor\" href=\"#2-错误的原因\"></a> 2. 错误的原因</h1>\n<p>Hadoop jline版本和hive的jline不一致</p>\n<h1 id=\"3-解决方法\"><a class=\"markdownIt-Anchor\" href=\"#3-解决方法\"></a> 3. 解决方法</h1>\n<p>删除your_install_path/hadoop/share/hadoop/yarn/lib目录下的jline包,然后把hive里面的jline包拷过来。</p>\n",
             "tags": [
                 "hive",
                 "hadoop",
