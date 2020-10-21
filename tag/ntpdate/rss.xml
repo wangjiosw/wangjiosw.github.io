@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Technology is a means, not an end • Posts by &#34;ntpdate&#34; tag</title>
-        <link>http://example.com</link>
+        <link>https://wangjiosw.github.io</link>
         <description></description>
         <language>en</language>
         <pubDate>Mon, 30 Mar 2020 17:14:00 +0800</pubDate>
@@ -22,9 +22,9 @@
         <category>cpasule</category>
         <category>paper</category>
         <item>
-            <guid isPermalink="true">http://example.com/2020/03/30/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hbase%E5%88%9B%E5%BB%BA%E8%A1%A8%E5%87%BA%E9%94%99/</guid>
+            <guid isPermalink="true">https://wangjiosw.github.io/2020/03/30/bigdata/Hbase%E5%88%9B%E5%BB%BA%E8%A1%A8%E5%87%BA%E9%94%99/</guid>
             <title>Hbase创建表出错</title>
-            <link>http://example.com/2020/03/30/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hbase%E5%88%9B%E5%BB%BA%E8%A1%A8%E5%87%BA%E9%94%99/</link>
+            <link>https://wangjiosw.github.io/2020/03/30/bigdata/Hbase%E5%88%9B%E5%BB%BA%E8%A1%A8%E5%87%BA%E9%94%99/</link>
             <category>hbase</category>
             <category>ntpdate</category>
             <pubDate>Mon, 30 Mar 2020 17:14:00 +0800</pubDate>
