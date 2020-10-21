@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wangjiosw.github.io/2020/10/21/java/jvm/fastjson-heap-oom/</loc>
+    
+    <lastmod>2020-10-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wangjiosw.github.io/about/index.html</loc>
     
     <lastmod>2020-10-21</lastmod>
@@ -199,6 +206,20 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://wangjiosw.github.io/tags/OutOfMemoryError/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wangjiosw.github.io/tags/heap/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -210,6 +231,13 @@
   
   <url>
     <loc>https://wangjiosw.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2020-10-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wangjiosw.github.io/categories/JVM/</loc>
     <lastmod>2020-10-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

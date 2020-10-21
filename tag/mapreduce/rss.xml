@@ -21,6 +21,8 @@
         <category>python</category>
         <category>cpasule</category>
         <category>paper</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/03/17/bigdata/%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8Cmapred%E9%97%AE%E9%A2%98/</guid>
             <title>本地运行mapred问题</title>
