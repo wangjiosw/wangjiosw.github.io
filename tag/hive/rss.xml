@@ -12,15 +12,15 @@
         <category>python</category>
         <category>vmware</category>
         <category>macos</category>
-        <category>mapreduce</category>
-        <category>java</category>
-        <category>hadoop</category>
-        <category>hive</category>
-        <category>centos</category>
-        <category>OutOfMemoryError</category>
-        <category>heap</category>
         <category>hbase</category>
         <category>ntpdate</category>
+        <category>hive</category>
+        <category>hadoop</category>
+        <category>centos</category>
+        <category>mapreduce</category>
+        <category>java</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
         <category>cpasule</category>
         <category>paper</category>
         <item>
@@ -68,8 +68,8 @@
             <guid isPermalink="true">https://wangjiosw.github.io/2020/03/17/bigdata/hive/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/</guid>
             <title>安装hive时jline版本不一致问题</title>
             <link>https://wangjiosw.github.io/2020/03/17/bigdata/hive/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/</link>
-            <category>hadoop</category>
             <category>hive</category>
+            <category>hadoop</category>
             <category>centos</category>
             <pubDate>Tue, 17 Mar 2020 15:14:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;1-问题描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-问题描述&#34;&gt;#&lt;/a&gt; 1. 问题描述&lt;/h1&gt;

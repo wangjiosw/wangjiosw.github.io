@@ -178,9 +178,9 @@
     <category term="大数据" scheme="https://wangjiosw.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
     
-    <category term="hadoop" scheme="https://wangjiosw.github.io/tags/hadoop/"/>
-    
     <category term="hive" scheme="https://wangjiosw.github.io/tags/hive/"/>
+    
+    <category term="hadoop" scheme="https://wangjiosw.github.io/tags/hadoop/"/>
     
     <category term="centos" scheme="https://wangjiosw.github.io/tags/centos/"/>
     
@@ -210,11 +210,11 @@
     
     <category term="macos" scheme="https://wangjiosw.github.io/tags/macos/"/>
     
+    <category term="hadoop" scheme="https://wangjiosw.github.io/tags/hadoop/"/>
+    
     <category term="mapreduce" scheme="https://wangjiosw.github.io/tags/mapreduce/"/>
     
     <category term="java" scheme="https://wangjiosw.github.io/tags/java/"/>
-    
-    <category term="hadoop" scheme="https://wangjiosw.github.io/tags/hadoop/"/>
     
   </entry>
   

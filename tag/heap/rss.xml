@@ -12,15 +12,15 @@
         <category>python</category>
         <category>vmware</category>
         <category>macos</category>
-        <category>mapreduce</category>
-        <category>java</category>
-        <category>hadoop</category>
-        <category>hive</category>
-        <category>centos</category>
-        <category>OutOfMemoryError</category>
-        <category>heap</category>
         <category>hbase</category>
         <category>ntpdate</category>
+        <category>hive</category>
+        <category>hadoop</category>
+        <category>centos</category>
+        <category>mapreduce</category>
+        <category>java</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
         <category>cpasule</category>
         <category>paper</category>
         <item>

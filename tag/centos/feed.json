@@ -11,8 +11,8 @@
             "date_published": "2020-03-17T07:14:00.000Z",
             "content_html": "<h1 id=\"1-问题描述\"><a class=\"markdownIt-Anchor\" href=\"#1-问题描述\">#</a> 1. 问题描述</h1>\n<figure class=\"highlight plain\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">将hive包解压后，运行bin目录下的hive脚本，报以下错误：</span><br><span class=\"line\">[ERROR] Terminal initialization failed; falling back to unsupported</span><br><span class=\"line\">java.lang.IncompatibleClassChangeError: Found class jline.Terminal, but interface was expected</span><br><span class=\"line\">\tat jline.TerminalFactory.create(TerminalFactory.java:101)</span><br></pre></td></tr></table></figure>\n<h1 id=\"2-错误的原因\"><a class=\"markdownIt-Anchor\" href=\"#2-错误的原因\">#</a> 2. 错误的原因</h1>\n<p>Hadoop jline 版本和 hive 的 jline 不一致</p>\n<h1 id=\"3-解决方法\"><a class=\"markdownIt-Anchor\" href=\"#3-解决方法\">#</a> 3. 解决方法</h1>\n<p>删除 your_install_path/hadoop/share/hadoop/yarn/lib 目录下的 jline 包，然后把 hive 里面的 jline 包拷过来。</p>\n",
             "tags": [
-                "hadoop",
                 "hive",
+                "hadoop",
                 "centos"
             ]
         }
