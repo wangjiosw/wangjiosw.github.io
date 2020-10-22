@@ -7,22 +7,22 @@
         <language>en</language>
         <pubDate>Sun, 01 Mar 2020 13:25:00 +0800</pubDate>
         <lastBuildDate>Sun, 01 Mar 2020 13:25:00 +0800</lastBuildDate>
-        <category>hbase</category>
-        <category>ntpdate</category>
-        <category>vmware</category>
-        <category>macos</category>
-        <category>hive</category>
-        <category>hadoop</category>
-        <category>centos</category>
-        <category>java</category>
-        <category>mapreduce</category>
         <category>nlp</category>
         <category>torchtext</category>
         <category>python</category>
-        <category>cpasule</category>
-        <category>paper</category>
+        <category>vmware</category>
+        <category>macos</category>
+        <category>mapreduce</category>
+        <category>java</category>
+        <category>hadoop</category>
+        <category>hive</category>
+        <category>centos</category>
         <category>OutOfMemoryError</category>
         <category>heap</category>
+        <category>hbase</category>
+        <category>ntpdate</category>
+        <category>cpasule</category>
+        <category>paper</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/03/01/deep-learning/capsule/</guid>
             <title>胶囊间的动态路由-论文解读</title>

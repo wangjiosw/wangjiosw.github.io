@@ -7,22 +7,22 @@
         <language>en</language>
         <pubDate>Wed, 21 Oct 2020 10:52:00 +0800</pubDate>
         <lastBuildDate>Wed, 21 Oct 2020 10:52:00 +0800</lastBuildDate>
-        <category>hbase</category>
-        <category>ntpdate</category>
-        <category>vmware</category>
-        <category>macos</category>
-        <category>hive</category>
-        <category>hadoop</category>
-        <category>centos</category>
-        <category>java</category>
-        <category>mapreduce</category>
         <category>nlp</category>
         <category>torchtext</category>
         <category>python</category>
-        <category>cpasule</category>
-        <category>paper</category>
+        <category>vmware</category>
+        <category>macos</category>
+        <category>mapreduce</category>
+        <category>java</category>
+        <category>hadoop</category>
+        <category>hive</category>
+        <category>centos</category>
         <category>OutOfMemoryError</category>
         <category>heap</category>
+        <category>hbase</category>
+        <category>ntpdate</category>
+        <category>cpasule</category>
+        <category>paper</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/21/java/jvm/fastjson-heap-oom/</guid>
             <title>使用fastjson时堆溢出</title>

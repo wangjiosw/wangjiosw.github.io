@@ -130,69 +130,6 @@
 
   
   <url>
-    <loc>https://wangjiosw.github.io/tags/hbase/</loc>
-    <lastmod>2020-10-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wangjiosw.github.io/tags/ntpdate/</loc>
-    <lastmod>2020-10-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wangjiosw.github.io/tags/vmware/</loc>
-    <lastmod>2020-10-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wangjiosw.github.io/tags/macos/</loc>
-    <lastmod>2020-10-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wangjiosw.github.io/tags/hive/</loc>
-    <lastmod>2020-10-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wangjiosw.github.io/tags/hadoop/</loc>
-    <lastmod>2020-10-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wangjiosw.github.io/tags/centos/</loc>
-    <lastmod>2020-10-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wangjiosw.github.io/tags/java/</loc>
-    <lastmod>2020-10-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wangjiosw.github.io/tags/mapreduce/</loc>
-    <lastmod>2020-10-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wangjiosw.github.io/tags/nlp/</loc>
     <lastmod>2020-10-22</lastmod>
     <changefreq>daily</changefreq>
@@ -214,14 +151,49 @@
   </url>
   
   <url>
-    <loc>https://wangjiosw.github.io/tags/cpasule/</loc>
+    <loc>https://wangjiosw.github.io/tags/vmware/</loc>
     <lastmod>2020-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://wangjiosw.github.io/tags/paper/</loc>
+    <loc>https://wangjiosw.github.io/tags/macos/</loc>
+    <lastmod>2020-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wangjiosw.github.io/tags/mapreduce/</loc>
+    <lastmod>2020-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wangjiosw.github.io/tags/java/</loc>
+    <lastmod>2020-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wangjiosw.github.io/tags/hadoop/</loc>
+    <lastmod>2020-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wangjiosw.github.io/tags/hive/</loc>
+    <lastmod>2020-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wangjiosw.github.io/tags/centos/</loc>
     <lastmod>2020-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -241,17 +213,45 @@
     <priority>0.6</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://wangjiosw.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
+    <loc>https://wangjiosw.github.io/tags/hbase/</loc>
     <lastmod>2020-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
+    <loc>https://wangjiosw.github.io/tags/ntpdate/</loc>
+    <lastmod>2020-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wangjiosw.github.io/tags/cpasule/</loc>
+    <lastmod>2020-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wangjiosw.github.io/tags/paper/</loc>
+    <lastmod>2020-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+  <url>
     <loc>https://wangjiosw.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2020-10-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wangjiosw.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
     <lastmod>2020-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

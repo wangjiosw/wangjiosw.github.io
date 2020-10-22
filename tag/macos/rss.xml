@@ -7,22 +7,22 @@
         <language>en</language>
         <pubDate>Thu, 22 Oct 2020 19:34:00 +0800</pubDate>
         <lastBuildDate>Thu, 22 Oct 2020 19:34:00 +0800</lastBuildDate>
-        <category>hbase</category>
-        <category>ntpdate</category>
-        <category>vmware</category>
-        <category>macos</category>
-        <category>hive</category>
-        <category>hadoop</category>
-        <category>centos</category>
-        <category>java</category>
-        <category>mapreduce</category>
         <category>nlp</category>
         <category>torchtext</category>
         <category>python</category>
-        <category>cpasule</category>
-        <category>paper</category>
+        <category>vmware</category>
+        <category>macos</category>
+        <category>mapreduce</category>
+        <category>java</category>
+        <category>hadoop</category>
+        <category>hive</category>
+        <category>centos</category>
         <category>OutOfMemoryError</category>
         <category>heap</category>
+        <category>hbase</category>
+        <category>ntpdate</category>
+        <category>cpasule</category>
+        <category>paper</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/22/bigdata/hive/hive-Sougou/</guid>
             <title>Hive分析搜狗用户搜索日志-数据预处理</title>
@@ -62,11 +62,11 @@
             <category>macos</category>
             <category>mapreduce</category>
             <pubDate>Wed, 21 Oct 2020 11:19:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;1-问题描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-问题描述&#34;&gt;&lt;/a&gt; 1. 问题描述&lt;/h1&gt;
-&lt;p&gt;Mac 单机集群使用hadoop jar 运行jar包报错：&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;1-问题描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-问题描述&#34;&gt;#&lt;/a&gt; 1. 问题描述&lt;/h1&gt;
+&lt;p&gt;Mac 单机集群使用 hadoop jar 运行 jar 包报错：&lt;/p&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Exception in thread &amp;quot;main&amp;quot; java.io.IOException: Mkdirs failed to create /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/hadoop-unjar7560830407203462827/META-INF/license&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;at org.apache.hadoop.util.RunJar.ensureDirectory(RunJar.java:128)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;at org.apache.hadoop.util.RunJar.unJar(RunJar.java:104)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;at org.apache.hadoop.util.RunJar.unJar(RunJar.java:81)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;at org.apache.hadoop.util.RunJar.run(RunJar.java:209)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;at org.apache.hadoop.util.RunJar.main(RunJar.java:136)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&#34;2-解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-解决方法&#34;&gt;&lt;/a&gt; 2. 解决方法&lt;/h1&gt;
-&lt;p&gt;Only thrown in MacOS, and solution is:&lt;br /&gt;
+&lt;h1 id=&#34;2-解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-解决方法&#34;&gt;#&lt;/a&gt; 2. 解决方法&lt;/h1&gt;
+&lt;p&gt;Only thrown in MacOS, and solution is:&lt;br&gt;
 @see: &lt;a href=&#34;http://stackoverflow.com/questions/10522835/hadoop-java-io-ioexception-mkdirs-failed-to-create-some-path&#34;&gt;http://stackoverflow.com/questions/10522835/hadoop-java-io-ioexception-mkdirs-failed-to-create-some-path&lt;/a&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;modify jar&lt;/li&gt;
@@ -82,18 +82,18 @@
             <title>本地运行mapred问题</title>
             <link>https://wangjiosw.github.io/2020/03/17/bigdata/mapreduce/%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8Cmapred%E9%97%AE%E9%A2%98/</link>
             <category>macos</category>
-            <category>hadoop</category>
-            <category>java</category>
             <category>mapreduce</category>
+            <category>java</category>
+            <category>hadoop</category>
             <pubDate>Tue, 17 Mar 2020 14:58:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;1-问题描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-问题描述&#34;&gt;&lt;/a&gt; 1. 问题描述&lt;/h1&gt;
-&lt;p&gt;在hadoop集群上跑mapreduce代码很慢，可以通过设置&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;1-问题描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-问题描述&#34;&gt;#&lt;/a&gt; 1. 问题描述&lt;/h1&gt;
+&lt;p&gt;在 hadoop 集群上跑 mapreduce 代码很慢，可以通过设置&lt;/p&gt;
 &lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;conf.set(&amp;quot;mapreduce.framework.name&amp;quot;, &amp;quot;local&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;使mapreduce代码能在本地运行。&lt;/p&gt;
+&lt;p&gt;使 mapreduce 代码能在本地运行。&lt;/p&gt;
 &lt;p&gt;运行时报以下错误：&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;2020&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;03&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;14&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;24&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;30&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;241&lt;/span&gt; WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:&amp;lt;clinit&amp;gt;(&lt;span class=&#34;number&#34;&gt;62&lt;/span&gt;)) - Unable to load &lt;span class=&#34;keyword&#34;&gt;native&lt;/span&gt;-hadoop library &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; your platform... using builtin-java classes where applicable&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;2020&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;03&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;14&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;24&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;31&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;625&lt;/span&gt; INFO  [main] Configuration.deprecation (Configuration.java:warnOnceIfDeprecated(&lt;span class=&#34;number&#34;&gt;1129&lt;/span&gt;)) - session.id is deprecated. Instead, use dfs.metrics.session-id&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;2020&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;03&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;14&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;24&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;31&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;626&lt;/span&gt; INFO  [main] jvm.JvmMetrics (JvmMetrics.java:init(&lt;span class=&#34;number&#34;&gt;76&lt;/span&gt;)) - Initializing JVM Metrics with processName=JobTracker, sessionId=&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;2020&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;03&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;14&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;24&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;31&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;924&lt;/span&gt; WARN  [main] mapreduce.JobResourceUploader (JobResourceUploader.java:uploadFiles(&lt;span class=&#34;number&#34;&gt;64&lt;/span&gt;)) - Hadoop command-line option parsing not performed. Implement the Tool &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;interface&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;execute&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;your&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;application&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;with&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;ToolRunner&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;remedy&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;this&lt;/span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2020-03-14 20:24:31,948 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:submitJobInternal(250)) - Cleaning up the staging area file:/var/sxt/hadoop/ha/mapred/staging/wangji241520974/.staging/job_local241520974_0001&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ExitCodeException exitCode=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;: chmod: /&lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt;/&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt;/sxt/hadoop/ha/mapred/staging/wangji241520974/.staging/job_local241520974_0001: No such file or directory&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&#34;2-解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-解决方法&#34;&gt;&lt;/a&gt; 2. 解决方法&lt;/h1&gt;
-&lt;p&gt;在/private/var目录下创建sxt目录,并把权限改为777&lt;/p&gt;
+&lt;h1 id=&#34;2-解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-解决方法&#34;&gt;#&lt;/a&gt; 2. 解决方法&lt;/h1&gt;
+&lt;p&gt;在 /private/var 目录下创建 sxt 目录，并把权限改为 777&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo mkdir sxt&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo chmod 777 sxt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
@@ -103,24 +103,24 @@
             <category>vmware</category>
             <category>macos</category>
             <pubDate>Sat, 29 Feb 2020 23:25:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;1-安装vmware虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-安装vmware虚拟机&#34;&gt;&lt;/a&gt; 1. 安装vmware虚拟机&lt;/h1&gt;
-&lt;p&gt;安装vmware虚拟机，并新建一个centos 64位的虚拟机&lt;/p&gt;
-&lt;h1 id=&#34;2-设置虚拟机网络模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-设置虚拟机网络模式&#34;&gt;&lt;/a&gt; 2. 设置虚拟机网络模式&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/20200210222413551.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;3-查看vmware的网关和掩码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-查看vmware的网关和掩码&#34;&gt;&lt;/a&gt; 3. 查看vmware的网关和掩码&lt;/h1&gt;
-&lt;p&gt;在Mac电脑的终端输入：&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;1-安装vmware虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-安装vmware虚拟机&#34;&gt;#&lt;/a&gt; 1. 安装 vmware 虚拟机&lt;/h1&gt;
+&lt;p&gt;安装 vmware 虚拟机，并新建一个 centos 64 位的虚拟机&lt;/p&gt;
+&lt;h1 id=&#34;2-设置虚拟机网络模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-设置虚拟机网络模式&#34;&gt;#&lt;/a&gt; 2. 设置虚拟机网络模式&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/20200210222413551.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;3-查看vmware的网关和掩码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-查看vmware的网关和掩码&#34;&gt;#&lt;/a&gt; 3. 查看 vmware 的网关和掩码&lt;/h1&gt;
+&lt;p&gt;在 Mac 电脑的终端输入：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cat /Library/Preferences/VMware\ Fusion/vmnet8/nat.conf&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;输出结果如下：&lt;br /&gt;
-&lt;img src=&#34;https://img-blog.csdnimg.cn/20200210222624261.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
-这里的ip和netmask即为vmware虚拟机的网关和掩码&lt;/p&gt;
+&lt;p&gt;输出结果如下：&lt;br&gt;
+&lt;img src=&#34;https://img-blog.csdnimg.cn/20200210222624261.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+这里的 ip 和 netmask 即为 vmware 虚拟机的网关和掩码&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# NAT gateway address&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ip = 172.16.143.2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;netmask = 255.255.255.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;ip和netmask后面配置centos虚拟机的网络时分别对于网关和掩码。&lt;/p&gt;
-&lt;h1 id=&#34;4-配置centos虚拟机的网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-配置centos虚拟机的网络&#34;&gt;&lt;/a&gt; 4. 配置centos虚拟机的网络&lt;/h1&gt;
-&lt;p&gt;在centos虚拟机的终端输入：&lt;/p&gt;
+&lt;p&gt;ip 和 netmask 后面配置 centos 虚拟机的网络时分别对于网关和掩码。&lt;/p&gt;
+&lt;h1 id=&#34;4-配置centos虚拟机的网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-配置centos虚拟机的网络&#34;&gt;#&lt;/a&gt; 4. 配置 centos 虚拟机的网络&lt;/h1&gt;
+&lt;p&gt;在 centos 虚拟机的终端输入：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;vi /etc/sysconfig/network-scripts/ifcfg-eth0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;然后：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;删除UUID和MAC地址&lt;/li&gt;
+&lt;li&gt;删除 UUID 和 MAC 地址&lt;/li&gt;
 &lt;li&gt;ONBOOT=yes&lt;/li&gt;
 &lt;li&gt;BOOTPROTO=static&lt;/li&gt;
 &lt;li&gt;IPADDR=172.16.143.101&lt;/li&gt;
@@ -128,9 +128,9 @@
 &lt;li&gt;GATEWAY=172.16.143.2&lt;/li&gt;
 &lt;li&gt;DNS1=172.16.143.2&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;保存并退出，然后在centos虚拟机的终端输入：&lt;/p&gt;
+&lt;p&gt;保存并退出，然后在 centos 虚拟机的终端输入：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;service network restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;ping 一下百度看是否能ping通：&lt;/p&gt;
+&lt;p&gt;ping 一下百度看是否能 ping 通：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ping www.baidu.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
     </channel>

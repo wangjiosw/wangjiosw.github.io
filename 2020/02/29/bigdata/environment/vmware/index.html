@@ -18,12 +18,12 @@
   
   
   <title>Mac OS VMware Fusion Centos6.5虚拟机网络设置 | Note</title>
-  <meta name="description" content="1. 安装vmware虚拟机 安装vmware虚拟机，并新建一个centos 64位的虚拟机  2. 设置虚拟机网络模式   3. 查看vmware的网关和掩码 在Mac电脑的终端输入： 1cat &#x2F;Library&#x2F;Preferences&#x2F;VMware\ Fusion&#x2F;vmnet8&#x2F;nat.conf 输出结果如下：  这里的ip和netmask即为vmware虚拟机的网关和掩码 123# NAT">
+  <meta name="description" content="# 1. 安装 vmware 虚拟机 安装 vmware 虚拟机，并新建一个 centos 64 位的虚拟机 # 2. 设置虚拟机网络模式  # 3. 查看 vmware 的网关和掩码 在 Mac 电脑的终端输入： 1cat &#x2F;Library&#x2F;Preferences&#x2F;VMware\ Fusion&#x2F;vmnet8&#x2F;nat.conf 输出结果如下：  这里的 ip 和 netmask 即为 vmware">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac OS VMware Fusion Centos6.5虚拟机网络设置">
 <meta property="og:url" content="https://wangjiosw.github.io/2020/02/29/bigdata/environment/vmware/index.html">
 <meta property="og:site_name" content="Technology is a means, not an end">
-<meta property="og:description" content="1. 安装vmware虚拟机 安装vmware虚拟机，并新建一个centos 64位的虚拟机  2. 设置虚拟机网络模式   3. 查看vmware的网关和掩码 在Mac电脑的终端输入： 1cat &#x2F;Library&#x2F;Preferences&#x2F;VMware\ Fusion&#x2F;vmnet8&#x2F;nat.conf 输出结果如下：  这里的ip和netmask即为vmware虚拟机的网关和掩码 123# NAT">
+<meta property="og:description" content="# 1. 安装 vmware 虚拟机 安装 vmware 虚拟机，并新建一个 centos 64 位的虚拟机 # 2. 设置虚拟机网络模式  # 3. 查看 vmware 的网关和掩码 在 Mac 电脑的终端输入： 1cat &#x2F;Library&#x2F;Preferences&#x2F;VMware\ Fusion&#x2F;vmnet8&#x2F;nat.conf 输出结果如下：  这里的 ip 和 netmask 即为 vmware">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200210222413551.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200210222624261.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70">
@@ -398,7 +398,7 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/02/29/bigdata/environment/vmware/#comments" class="article-comment-link">Comments</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 212(words)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 217(words)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1(minutes)</span>
@@ -408,24 +408,24 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="1-安装vmware虚拟机"><a class="markdownIt-Anchor" href="#1-安装vmware虚拟机"></a> 1. 安装vmware虚拟机</h1>
-<p>安装vmware虚拟机，并新建一个centos 64位的虚拟机</p>
-<h1 id="2-设置虚拟机网络模式"><a class="markdownIt-Anchor" href="#2-设置虚拟机网络模式"></a> 2. 设置虚拟机网络模式</h1>
-<p><img src="https://img-blog.csdnimg.cn/20200210222413551.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70" alt="" /></p>
-<h1 id="3-查看vmware的网关和掩码"><a class="markdownIt-Anchor" href="#3-查看vmware的网关和掩码"></a> 3. 查看vmware的网关和掩码</h1>
-<p>在Mac电脑的终端输入：</p>
+        <h1 id="1-安装vmware虚拟机"><a class="markdownIt-Anchor" href="#1-安装vmware虚拟机">#</a> 1. 安装 vmware 虚拟机</h1>
+<p>安装 vmware 虚拟机，并新建一个 centos 64 位的虚拟机</p>
+<h1 id="2-设置虚拟机网络模式"><a class="markdownIt-Anchor" href="#2-设置虚拟机网络模式">#</a> 2. 设置虚拟机网络模式</h1>
+<p><img src="https://img-blog.csdnimg.cn/20200210222413551.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70" alt=""></p>
+<h1 id="3-查看vmware的网关和掩码"><a class="markdownIt-Anchor" href="#3-查看vmware的网关和掩码">#</a> 3. 查看 vmware 的网关和掩码</h1>
+<p>在 Mac 电脑的终端输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /Library/Preferences/VMware\ Fusion/vmnet8/nat.conf</span><br></pre></td></tr></table></figure>
-<p>输出结果如下：<br />
-<img src="https://img-blog.csdnimg.cn/20200210222624261.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70" alt="" /><br />
-这里的ip和netmask即为vmware虚拟机的网关和掩码</p>
+<p>输出结果如下：<br>
+<img src="https://img-blog.csdnimg.cn/20200210222624261.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70" alt=""><br>
+这里的 ip 和 netmask 即为 vmware 虚拟机的网关和掩码</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># NAT gateway address</span></span><br><span class="line">ip = 172.16.143.2</span><br><span class="line">netmask = 255.255.255.0</span><br></pre></td></tr></table></figure>
-<p>ip和netmask后面配置centos虚拟机的网络时分别对于网关和掩码。</p>
-<h1 id="4-配置centos虚拟机的网络"><a class="markdownIt-Anchor" href="#4-配置centos虚拟机的网络"></a> 4. 配置centos虚拟机的网络</h1>
-<p>在centos虚拟机的终端输入：</p>
+<p>ip 和 netmask 后面配置 centos 虚拟机的网络时分别对于网关和掩码。</p>
+<h1 id="4-配置centos虚拟机的网络"><a class="markdownIt-Anchor" href="#4-配置centos虚拟机的网络">#</a> 4. 配置 centos 虚拟机的网络</h1>
+<p>在 centos 虚拟机的终端输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-eth0</span><br></pre></td></tr></table></figure>
 <p>然后：</p>
 <ul>
-<li>删除UUID和MAC地址</li>
+<li>删除 UUID 和 MAC 地址</li>
 <li>ONBOOT=yes</li>
 <li>BOOTPROTO=static</li>
 <li>IPADDR=172.16.143.101</li>
@@ -433,9 +433,9 @@
 <li>GATEWAY=172.16.143.2</li>
 <li>DNS1=172.16.143.2</li>
 </ul>
-<p>保存并退出，然后在centos虚拟机的终端输入：</p>
+<p>保存并退出，然后在 centos 虚拟机的终端输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service network restart</span><br></pre></td></tr></table></figure>
-<p>ping 一下百度看是否能ping通：</p>
+<p>ping 一下百度看是否能 ping 通：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping www.baidu.com</span><br></pre></td></tr></table></figure>
       
     </div>
