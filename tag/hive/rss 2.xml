@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Technology is a means, not an end • Posts by &#34;hive&#34; tag</title>
+        <link>https://wangjiosw.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Thu, 22 Oct 2020 19:34:00 +0800</pubDate>
+        <lastBuildDate>Thu, 22 Oct 2020 19:34:00 +0800</lastBuildDate>
+        <category>nlp</category>
+        <category>torchtext</category>
+        <category>python</category>
+        <category>vmware</category>
+        <category>macos</category>
+        <category>hbase</category>
+        <category>ntpdate</category>
+        <category>hive</category>
+        <category>hadoop</category>
+        <category>centos</category>
+        <category>mapreduce</category>
+        <category>java</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
+        <category>cpasule</category>
+        <category>paper</category>
+        <item>
+            <guid isPermalink="true">https://wangjiosw.github.io/2020/10/22/bigdata/hive/hive-Sougou/</guid>
+            <title>Hive分析搜狗用户搜索日志-数据预处理</title>
+            <link>https://wangjiosw.github.io/2020/10/22/bigdata/hive/hive-Sougou/</link>
+            <category>macos</category>
+            <category>hive</category>
+            <pubDate>Thu, 22 Oct 2020 19:34:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#环境&#34;&gt;#&lt;/a&gt; 环境&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;MacOS&lt;/li&gt;
+&lt;li&gt;单机 hadoop 集群&lt;/li&gt;
+&lt;li&gt;Hive (内嵌模式)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;预处理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#预处理&#34;&gt;#&lt;/a&gt; 预处理&lt;/h1&gt;
+&lt;h2 id=&#34;1-查看数据&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-查看数据&#34;&gt;#&lt;/a&gt; 1. 查看数据&lt;/h2&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;head Sougou.reduced&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;结果如下&lt;br&gt;
+&lt;img src=&#34;/images/bigdata/hive/sougou/origin.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;可以发现有许多乱码&lt;/p&gt;
+&lt;h2 id=&#34;2-查看文件编码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-查看文件编码&#34;&gt;#&lt;/a&gt; 2. 查看文件编码&lt;/h2&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;file Sougou.reduced&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;结果如下&lt;br&gt;
+&lt;img src=&#34;/images/bigdata/hive/sougou/file.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;网上查询得知 Non-ISO extended-ASCII text 代表 gb18030&lt;/p&gt;
+&lt;h2 id=&#34;3-使用iconv转换文件编码格式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-使用iconv转换文件编码格式&#34;&gt;#&lt;/a&gt; 3. 使用 iconv 转换文件编码格式&lt;/h2&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;iconv -f gb18030 -t utf-8 SogouQ.reduced&amp;gt;SogouQ.reduced.new&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;结果如下&lt;br&gt;
+&lt;img src=&#34;/images/bigdata/hive/sougou/conv.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;4-将文件中的空格和制表符全部替换为英文逗号&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-将文件中的空格和制表符全部替换为英文逗号&#34;&gt;#&lt;/a&gt; 4. 将文件中的空格和制表符全部替换为英文逗号&lt;/h2&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sed -i &amp;quot;&amp;quot; &amp;quot;s&amp;#x2F;\t&amp;#x2F;,&amp;#x2F;g&amp;quot; SogouQ.reduced.new&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sed -i &amp;quot;&amp;quot; &amp;quot;s&amp;#x2F; &amp;#x2F;,&amp;#x2F;g&amp;quot; SogouQ.reduced.new&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://wangjiosw.github.io/2020/10/20/bigdata/hive/dbeaver-hive-connect/</guid>
+            <title>DBeaver连接hive需要的驱动jar包</title>
+            <link>https://wangjiosw.github.io/2020/10/20/bigdata/hive/dbeaver-hive-connect/</link>
+            <category>hive</category>
+            <pubDate>Tue, 20 Oct 2020 11:46:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;https://github.com/wangjiosw/wangjiosw.github.io/tree/master/images/bigdata/hive/dbeaver&#34;&gt;下载地址&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://wangjiosw.github.io/2020/03/17/bigdata/hive/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/</guid>
+            <title>安装hive时jline版本不一致问题</title>
+            <link>https://wangjiosw.github.io/2020/03/17/bigdata/hive/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/</link>
+            <category>hive</category>
+            <category>hadoop</category>
+            <category>centos</category>
+            <pubDate>Tue, 17 Mar 2020 15:14:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1-问题描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-问题描述&#34;&gt;#&lt;/a&gt; 1. 问题描述&lt;/h1&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;将hive包解压后，运行bin目录下的hive脚本，报以下错误：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[ERROR] Terminal initialization failed; falling back to unsupported&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;java.lang.IncompatibleClassChangeError: Found class jline.Terminal, but interface was expected&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	at jline.TerminalFactory.create(TerminalFactory.java:101)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;2-错误的原因&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-错误的原因&#34;&gt;#&lt;/a&gt; 2. 错误的原因&lt;/h1&gt;
+&lt;p&gt;Hadoop jline 版本和 hive 的 jline 不一致&lt;/p&gt;
+&lt;h1 id=&#34;3-解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-解决方法&#34;&gt;#&lt;/a&gt; 3. 解决方法&lt;/h1&gt;
+&lt;p&gt;删除 your_install_path/hadoop/share/hadoop/yarn/lib 目录下的 jline 包，然后把 hive 里面的 jline 包拷过来。&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
