@@ -51,8 +51,11 @@
 &lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;iconv -f gb18030 -t utf-8 SogouQ.reduced&amp;gt;SogouQ.reduced.new&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;结果如下&lt;br&gt;
 &lt;img src=&#34;/images/bigdata/hive/sougou/conv.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;4-将文件中的空格和制表符全部替换为英文逗号&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-将文件中的空格和制表符全部替换为英文逗号&#34;&gt;#&lt;/a&gt; 4. 将文件中的空格和制表符全部替换为英文逗号&lt;/h2&gt;
-&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sed -i &amp;quot;&amp;quot; &amp;quot;s&amp;#x2F;\t&amp;#x2F;,&amp;#x2F;g&amp;quot; SogouQ.reduced.new&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sed -i &amp;quot;&amp;quot; &amp;quot;s&amp;#x2F; &amp;#x2F;,&amp;#x2F;g&amp;quot; SogouQ.reduced.new&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;!-- ## 4. 将文件中的空格和制表符全部替换为英文逗号
+```
+sed -i &#34;&#34; &#34;s/\t/,/g&#34; SogouQ.reduced.new
+sed -i &#34;&#34; &#34;s/ /,/g&#34; SogouQ.reduced.new
+``` --&gt;
  ]]></description>
         </item>
         <item>
