@@ -5,18 +5,6 @@
     "home_page_url": "https://wangjiosw.github.io",
     "items": [
         {
-            "id": "https://wangjiosw.github.io/2020/10/20/bigdata/hive/dbeaver-hive-connect/",
-            "url": "https://wangjiosw.github.io/2020/10/20/bigdata/hive/dbeaver-hive-connect/",
-            "title": "DBeaver连接hive需要的驱动jar包",
-            "date_published": "2020-10-20T03:46:00.000Z",
-            "content_html": "<p><a href=\"https://github.com/wangjiosw/wangjiosw.github.io/tree/master/images/bigdata/hive/dbeaver\">下载地址</a></p>\n",
-            "tags": [
-                "hive",
-                "hadoop",
-                "centos"
-            ]
-        },
-        {
             "id": "https://wangjiosw.github.io/2020/03/17/bigdata/hive/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/",
             "url": "https://wangjiosw.github.io/2020/03/17/bigdata/hive/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/",
             "title": "安装hive时jline版本不一致问题",

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://wangjiosw.github.io/2020/10/22/bigdata/hive/hive-Sougou/</loc>
+    <lastmod>2020-10-22</lastmod>
+  </url>
+  <url>
     <loc>https://wangjiosw.github.io/2020/10/20/bigdata/hive/dbeaver-hive-connect/</loc>
-    <lastmod>2020-10-21</lastmod>
+    <lastmod>2020-10-22</lastmod>
   </url>
   <url>
     <loc>https://wangjiosw.github.io/2020/02/29/bigdata/environment/vmware/</loc>

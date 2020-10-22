@@ -5,8 +5,8 @@
         <link>https://wangjiosw.github.io</link>
         <description></description>
         <language>en</language>
-        <pubDate>Wed, 21 Oct 2020 11:19:00 +0800</pubDate>
-        <lastBuildDate>Wed, 21 Oct 2020 11:19:00 +0800</lastBuildDate>
+        <pubDate>Thu, 22 Oct 2020 19:34:00 +0800</pubDate>
+        <lastBuildDate>Thu, 22 Oct 2020 19:34:00 +0800</lastBuildDate>
         <category>hbase</category>
         <category>ntpdate</category>
         <category>vmware</category>
@@ -23,6 +23,38 @@
         <category>paper</category>
         <category>OutOfMemoryError</category>
         <category>heap</category>
+        <item>
+            <guid isPermalink="true">https://wangjiosw.github.io/2020/10/22/bigdata/hive/hive-Sougou/</guid>
+            <title>Hive分析搜狗用户搜索日志-数据预处理</title>
+            <link>https://wangjiosw.github.io/2020/10/22/bigdata/hive/hive-Sougou/</link>
+            <category>macos</category>
+            <category>hive</category>
+            <pubDate>Thu, 22 Oct 2020 19:34:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#环境&#34;&gt;#&lt;/a&gt; 环境&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;MacOS&lt;/li&gt;
+&lt;li&gt;单机 hadoop 集群&lt;/li&gt;
+&lt;li&gt;Hive (内嵌模式)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;预处理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#预处理&#34;&gt;#&lt;/a&gt; 预处理&lt;/h1&gt;
+&lt;h2 id=&#34;1-查看数据&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-查看数据&#34;&gt;#&lt;/a&gt; 1. 查看数据&lt;/h2&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;head Sougou.reduced&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;结果如下&lt;br&gt;
+&lt;img src=&#34;/images/bigdata/hive/sougou/origin.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;可以发现有许多乱码&lt;/p&gt;
+&lt;h2 id=&#34;2-查看文件编码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-查看文件编码&#34;&gt;#&lt;/a&gt; 2. 查看文件编码&lt;/h2&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;file Sougou.reduced&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;结果如下&lt;br&gt;
+&lt;img src=&#34;/images/bigdata/hive/sougou/file.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;网上查询得知 Non-ISO extended-ASCII text 代表 gb18030&lt;/p&gt;
+&lt;h2 id=&#34;3-使用iconv转换文件编码格式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-使用iconv转换文件编码格式&#34;&gt;#&lt;/a&gt; 3. 使用 iconv 转换文件编码格式&lt;/h2&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;iconv -f gb18030 -t utf-8 SogouQ.reduced&amp;gt;SogouQ.reduced.new&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;结果如下&lt;br&gt;
+&lt;img src=&#34;/images/bigdata/hive/sougou/conv.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;4-将文件中的空格和制表符全部替换为英文逗号&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-将文件中的空格和制表符全部替换为英文逗号&#34;&gt;#&lt;/a&gt; 4. 将文件中的空格和制表符全部替换为英文逗号&lt;/h2&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sed -i &amp;quot;&amp;quot; &amp;quot;s&amp;#x2F;\t&amp;#x2F;,&amp;#x2F;g&amp;quot; SogouQ.reduced.new&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sed -i &amp;quot;&amp;quot; &amp;quot;s&amp;#x2F; &amp;#x2F;,&amp;#x2F;g&amp;quot; SogouQ.reduced.new&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/21/bigdata/mapreduce/mac-hadoop-jar-problem/</guid>
             <title>Mac 单机集群使用hadoop jar 运行jar包出现的问题</title>
@@ -74,8 +106,6 @@
             <title>DBeaver连接hive需要的驱动jar包</title>
             <link>https://wangjiosw.github.io/2020/10/20/bigdata/hive/dbeaver-hive-connect/</link>
             <category>hive</category>
-            <category>hadoop</category>
-            <category>centos</category>
             <pubDate>Tue, 20 Oct 2020 11:46:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;https://github.com/wangjiosw/wangjiosw.github.io/tree/master/images/bigdata/hive/dbeaver&#34;&gt;下载地址&lt;/a&gt;&lt;/p&gt;
  ]]></description>
