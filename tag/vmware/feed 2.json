@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Technology is a means, not an end • All posts by \"vmware\" tag",
+    "description": "",
+    "home_page_url": "https://wangjiosw.github.io",
+    "items": [
+        {
+            "id": "https://wangjiosw.github.io/2020/02/29/bigdata/environment/vmware/",
+            "url": "https://wangjiosw.github.io/2020/02/29/bigdata/environment/vmware/",
+            "title": "Mac OS VMware Fusion Centos6.5虚拟机网络设置",
+            "date_published": "2020-02-29T15:25:00.000Z",
+            "content_html": "<h1 id=\"1-安装vmware虚拟机\"><a class=\"markdownIt-Anchor\" href=\"#1-安装vmware虚拟机\">#</a> 1. 安装 vmware 虚拟机</h1>\n<p>安装 vmware 虚拟机，并新建一个 centos 64 位的虚拟机</p>\n<h1 id=\"2-设置虚拟机网络模式\"><a class=\"markdownIt-Anchor\" href=\"#2-设置虚拟机网络模式\">#</a> 2. 设置虚拟机网络模式</h1>\n<p><img src=\"https://img-blog.csdnimg.cn/20200210222413551.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70\" alt=\"\"></p>\n<h1 id=\"3-查看vmware的网关和掩码\"><a class=\"markdownIt-Anchor\" href=\"#3-查看vmware的网关和掩码\">#</a> 3. 查看 vmware 的网关和掩码</h1>\n<p>在 Mac 电脑的终端输入：</p>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">cat /Library/Preferences/VMware\\ Fusion/vmnet8/nat.conf</span><br></pre></td></tr></table></figure>\n<p>输出结果如下：<br>\n<img src=\"https://img-blog.csdnimg.cn/20200210222624261.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70\" alt=\"\"><br>\n这里的 ip 和 netmask 即为 vmware 虚拟机的网关和掩码</p>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"comment\"># NAT gateway address</span></span><br><span class=\"line\">ip = 172.16.143.2</span><br><span class=\"line\">netmask = 255.255.255.0</span><br></pre></td></tr></table></figure>\n<p>ip 和 netmask 后面配置 centos 虚拟机的网络时分别对于网关和掩码。</p>\n<h1 id=\"4-配置centos虚拟机的网络\"><a class=\"markdownIt-Anchor\" href=\"#4-配置centos虚拟机的网络\">#</a> 4. 配置 centos 虚拟机的网络</h1>\n<p>在 centos 虚拟机的终端输入：</p>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">vi /etc/sysconfig/network-scripts/ifcfg-eth0</span><br></pre></td></tr></table></figure>\n<p>然后：</p>\n<ul>\n<li>删除 UUID 和 MAC 地址</li>\n<li>ONBOOT=yes</li>\n<li>BOOTPROTO=static</li>\n<li>IPADDR=172.16.143.101</li>\n<li>NETMASK=255.255.255.0</li>\n<li>GATEWAY=172.16.143.2</li>\n<li>DNS1=172.16.143.2</li>\n</ul>\n<p>保存并退出，然后在 centos 虚拟机的终端输入：</p>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">service network restart</span><br></pre></td></tr></table></figure>\n<p>ping 一下百度看是否能 ping 通：</p>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">ping www.baidu.com</span><br></pre></td></tr></table></figure>",
+            "tags": [
+                "vmware",
+                "macos"
+            ]
+        }
+    ]
+}
