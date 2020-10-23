@@ -8,6 +8,10 @@
         <pubDate>Sat, 29 Feb 2020 23:25:00 +0800</pubDate>
         <lastBuildDate>Sat, 29 Feb 2020 23:25:00 +0800</lastBuildDate>
         <category>矩阵求导</category>
+        <category>pytorch</category>
+        <category>RNN</category>
+        <category>GRU</category>
+        <category>LSTM</category>
         <category>nlp</category>
         <category>torchtext</category>
         <category>python</category>
