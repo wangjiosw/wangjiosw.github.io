@@ -7,6 +7,7 @@
         <language>en</language>
         <pubDate>Thu, 22 Oct 2020 19:34:00 +0800</pubDate>
         <lastBuildDate>Thu, 22 Oct 2020 19:34:00 +0800</lastBuildDate>
+        <category>矩阵求导</category>
         <category>nlp</category>
         <category>torchtext</category>
         <category>python</category>
@@ -25,7 +26,7 @@
         <category>paper</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/22/bigdata/hive/hive-Sougou/</guid>
-            <title>Hive分析搜狗用户搜索日志-数据预处理</title>
+            <title>Hive分析搜狗用户搜索日志-数据预处理(解决乱码问题)</title>
             <link>https://wangjiosw.github.io/2020/10/22/bigdata/hive/hive-Sougou/</link>
             <category>macos</category>
             <category>hive</category>
