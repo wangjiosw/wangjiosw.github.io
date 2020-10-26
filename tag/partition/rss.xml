@@ -5,8 +5,8 @@
         <link>https://wangjiosw.github.io</link>
         <description></description>
         <language>en</language>
-        <pubDate>Mon, 26 Oct 2020 21:36:00 +0800</pubDate>
-        <lastBuildDate>Mon, 26 Oct 2020 21:36:00 +0800</lastBuildDate>
+        <pubDate>Mon, 26 Oct 2020 22:04:00 +0800</pubDate>
+        <lastBuildDate>Mon, 26 Oct 2020 22:04:00 +0800</lastBuildDate>
         <category>矩阵求导</category>
         <category>pytorch</category>
         <category>RNN</category>
@@ -32,13 +32,57 @@
         <category>topic</category>
         <category>partition</category>
         <item>
+            <guid isPermalink="true">https://wangjiosw.github.io/2020/10/26/bigdata/kafka/kafka-topic-partition2/</guid>
+            <title>kafka主题的分区分配策略（二）</title>
+            <link>https://wangjiosw.github.io/2020/10/26/bigdata/kafka/kafka-topic-partition2/</link>
+            <category>kafka</category>
+            <category>topic</category>
+            <category>partition</category>
+            <pubDate>Mon, 26 Oct 2020 22:04:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;使用该分区策略的条件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用该分区策略的条件&#34;&gt;#&lt;/a&gt; 使用该分区策略的条件&lt;/h1&gt;
+&lt;p&gt;broker 包含机架信息，且未使用 replica-assignment 参数&lt;/p&gt;
+&lt;h1 id=&#34;和kafka主题的分区分配策略一的相同和不同之处&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#和kafka主题的分区分配策略一的相同和不同之处&#34;&gt;#&lt;/a&gt; 和 kafka 主题的分区分配策略（一）的相同和不同之处&lt;/h1&gt;
+&lt;p&gt;假设目前有 3 个机架，9 个 broker，机架和 broker 结点的对照关系入下表&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;机架&lt;/th&gt;
+&lt;th&gt;broker&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;rack1&lt;/td&gt;
+&lt;td&gt;0，1，2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rack2&lt;/td&gt;
+&lt;td&gt;3，4，5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rack3&lt;/td&gt;
+&lt;td&gt;6，7，8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;相同点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#相同点&#34;&gt;#&lt;/a&gt; 相同点&lt;/h2&gt;
+&lt;p&gt;分区的 broker 分配步骤和&lt;a href=&#34;../kafka-topic-partition1&#34;&gt; kafka 主题的分区分配策略（一）&lt;/a&gt;基本相同。&lt;/p&gt;
+&lt;h2 id=&#34;不同点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#不同点&#34;&gt;#&lt;/a&gt; 不同点&lt;/h2&gt;
+&lt;h3 id=&#34;不同点1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#不同点1&#34;&gt;#&lt;/a&gt; 不同点 1&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;../kafka-topic-partition1&#34;&gt;kafka 主题的分区分配策略（一）&lt;/a&gt;的 assignReplicasToBrokersRackUnaware () 方法里的 brokerArray 变量的值为 [0,1,2,3,4,5,6,7,8]&lt;/p&gt;
+&lt;p&gt;而 assignReplicasToBrokersRackUnaware () 方法里的 brokerArray 变量的值为 [0,3,6,1,4,7,2,5,8]，这是论询各个机架产生的结果，如此新的 brokerArray 中包含了简单的机架分配信息。&lt;/p&gt;
+&lt;h3 id=&#34;不同点2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#不同点2&#34;&gt;#&lt;/a&gt; 不同点 2&lt;/h3&gt;
+&lt;p&gt;给分区分配的 broker 需要经过一层过滤&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/26/bigdata/kafka/kafka-topic-partition1/</guid>
             <title>kafka主题的分区分配策略（一）</title>
             <link>https://wangjiosw.github.io/2020/10/26/bigdata/kafka/kafka-topic-partition1/</link>
             <category>kafka</category>
             <category>topic</category>
             <category>partition</category>
-            <pubDate>Mon, 26 Oct 2020 21:36:00 +0800</pubDate>
+            <pubDate>Mon, 26 Oct 2020 21:40:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;使用该分区策略的条件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用该分区策略的条件&#34;&gt;#&lt;/a&gt; 使用该分区策略的条件&lt;/h1&gt;
 &lt;p&gt;未指定机架或使用 disable-rack-aware 参数来创建主题，且未使用 replica-assignment 参数&lt;/p&gt;
 &lt;h1 id=&#34;思路&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#思路&#34;&gt;#&lt;/a&gt; 思路&lt;/h1&gt;
