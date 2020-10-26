@@ -28,6 +28,9 @@
         <category>heap</category>
         <category>cpasule</category>
         <category>paper</category>
+        <category>kafka</category>
+        <category>topic</category>
+        <category>partition</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/03/01/deep-learning/capsule/</guid>
             <title>胶囊间的动态路由-论文解读</title>

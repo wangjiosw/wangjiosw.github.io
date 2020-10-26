@@ -28,6 +28,9 @@
         <category>heap</category>
         <category>cpasule</category>
         <category>paper</category>
+        <category>kafka</category>
+        <category>topic</category>
+        <category>partition</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/22/bigdata/hive/hive-Sougou/</guid>
             <title>Hive分析搜狗用户搜索日志-数据预处理(解决乱码问题)</title>
