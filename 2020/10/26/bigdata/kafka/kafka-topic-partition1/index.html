@@ -18,15 +18,15 @@
   
   
   <title>kafka主题的分区分配策略（一） | Note</title>
-  <meta name="description" content="# 使用该分区策略的条件 未指定机架或使用 disable-rack-aware 参数来创建主题，且未使用 replica-saaignment 参数 # 思路 核心是遍历每个分区 partition，然后从 brokerArray（brokerId 的列表）中选取 replicationFactor 个 brokerId 分配给这个 partition。 # kafka.admin.AdminU">
+  <meta name="description" content="# 使用该分区策略的条件 未指定机架或使用 disable-rack-aware 参数来创建主题，且未使用 replica-assignment 参数 # 思路 核心是遍历每个分区 partition，然后从 brokerArray（brokerId 的列表）中选取 replicationFactor 个 brokerId 分配给这个 partition。 # kafka.admin.AdminU">
 <meta property="og:type" content="article">
 <meta property="og:title" content="kafka主题的分区分配策略（一）">
 <meta property="og:url" content="https://wangjiosw.github.io/2020/10/26/bigdata/kafka/kafka-topic-partition1/index.html">
 <meta property="og:site_name" content="Technology is a means, not an end">
-<meta property="og:description" content="# 使用该分区策略的条件 未指定机架或使用 disable-rack-aware 参数来创建主题，且未使用 replica-saaignment 参数 # 思路 核心是遍历每个分区 partition，然后从 brokerArray（brokerId 的列表）中选取 replicationFactor 个 brokerId 分配给这个 partition。 # kafka.admin.AdminU">
+<meta property="og:description" content="# 使用该分区策略的条件 未指定机架或使用 disable-rack-aware 参数来创建主题，且未使用 replica-assignment 参数 # 思路 核心是遍历每个分区 partition，然后从 brokerArray（brokerId 的列表）中选取 replicationFactor 个 brokerId 分配给这个 partition。 # kafka.admin.AdminU">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-10-26T13:36:00.000Z">
-<meta property="article:modified_time" content="2020-10-26T13:42:13.329Z">
+<meta property="article:modified_time" content="2020-10-26T13:46:18.532Z">
 <meta property="article:author" content="wangji">
 <meta property="article:tag" content="kafka">
 <meta property="article:tag" content="topic">
@@ -416,7 +416,7 @@
     <div class="article-entry marked-body" itemprop="articleBody">
       
         <h1 id="使用该分区策略的条件"><a class="markdownIt-Anchor" href="#使用该分区策略的条件">#</a> 使用该分区策略的条件</h1>
-<p>未指定机架或使用 disable-rack-aware 参数来创建主题，且未使用 replica-saaignment 参数</p>
+<p>未指定机架或使用 disable-rack-aware 参数来创建主题，且未使用 replica-assignment 参数</p>
 <h1 id="思路"><a class="markdownIt-Anchor" href="#思路">#</a> 思路</h1>
 <p>核心是遍历每个分区 partition，然后从 brokerArray（brokerId 的列表）中选取 replicationFactor 个 brokerId 分配给这个 partition。</p>
 <h1 id="kafkaadminadminutilities"><a class="markdownIt-Anchor" href="#kafkaadminadminutilities">#</a> kafka.admin.AdminUtilities</h1>

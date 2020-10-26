@@ -40,7 +40,7 @@
             <category>partition</category>
             <pubDate>Mon, 26 Oct 2020 21:36:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;使用该分区策略的条件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用该分区策略的条件&#34;&gt;#&lt;/a&gt; 使用该分区策略的条件&lt;/h1&gt;
-&lt;p&gt;未指定机架或使用 disable-rack-aware 参数来创建主题，且未使用 replica-saaignment 参数&lt;/p&gt;
+&lt;p&gt;未指定机架或使用 disable-rack-aware 参数来创建主题，且未使用 replica-assignment 参数&lt;/p&gt;
 &lt;h1 id=&#34;思路&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#思路&#34;&gt;#&lt;/a&gt; 思路&lt;/h1&gt;
 &lt;p&gt;核心是遍历每个分区 partition，然后从 brokerArray（brokerId 的列表）中选取 replicationFactor 个 brokerId 分配给这个 partition。&lt;/p&gt;
 &lt;h1 id=&#34;kafkaadminadminutilities&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#kafkaadminadminutilities&#34;&gt;#&lt;/a&gt; kafka.admin.AdminUtilities&lt;/h1&gt;
