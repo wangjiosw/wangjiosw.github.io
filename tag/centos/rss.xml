@@ -15,6 +15,9 @@
         <category>nlp</category>
         <category>torchtext</category>
         <category>python</category>
+        <category>java</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
         <category>vmware</category>
         <category>macos</category>
         <category>hbase</category>
@@ -23,14 +26,11 @@
         <category>hadoop</category>
         <category>centos</category>
         <category>mapreduce</category>
-        <category>java</category>
-        <category>OutOfMemoryError</category>
-        <category>heap</category>
-        <category>cpasule</category>
-        <category>paper</category>
         <category>kafka</category>
         <category>topic</category>
         <category>partition</category>
+        <category>cpasule</category>
+        <category>paper</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/03/17/bigdata/hive/%E5%AE%89%E8%A3%85hive%E6%97%B6jline%E7%89%88%E6%9C%AC%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98/</guid>
             <title>安装hive时jline版本不一致问题</title>

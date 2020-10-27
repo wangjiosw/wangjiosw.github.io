@@ -15,6 +15,9 @@
         <category>nlp</category>
         <category>torchtext</category>
         <category>python</category>
+        <category>java</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
         <category>vmware</category>
         <category>macos</category>
         <category>hbase</category>
@@ -23,14 +26,11 @@
         <category>hadoop</category>
         <category>centos</category>
         <category>mapreduce</category>
-        <category>java</category>
-        <category>OutOfMemoryError</category>
-        <category>heap</category>
-        <category>cpasule</category>
-        <category>paper</category>
         <category>kafka</category>
         <category>topic</category>
         <category>partition</category>
+        <category>cpasule</category>
+        <category>paper</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/02/29/bigdata/environment/vmware/</guid>
             <title>Mac OS VMware Fusion Centos6.5虚拟机网络设置</title>

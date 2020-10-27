@@ -15,6 +15,9 @@
         <category>nlp</category>
         <category>torchtext</category>
         <category>python</category>
+        <category>java</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
         <category>vmware</category>
         <category>macos</category>
         <category>hbase</category>
@@ -23,14 +26,11 @@
         <category>hadoop</category>
         <category>centos</category>
         <category>mapreduce</category>
-        <category>java</category>
-        <category>OutOfMemoryError</category>
-        <category>heap</category>
-        <category>cpasule</category>
-        <category>paper</category>
         <category>kafka</category>
         <category>topic</category>
         <category>partition</category>
+        <category>cpasule</category>
+        <category>paper</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/03/30/bigdata/hbase/Hbase%E5%88%9B%E5%BB%BA%E8%A1%A8%E5%87%BA%E9%94%99/</guid>
             <title>Hbase创建表出错</title>

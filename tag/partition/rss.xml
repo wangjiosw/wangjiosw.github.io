@@ -15,6 +15,9 @@
         <category>nlp</category>
         <category>torchtext</category>
         <category>python</category>
+        <category>java</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
         <category>vmware</category>
         <category>macos</category>
         <category>hbase</category>
@@ -23,14 +26,11 @@
         <category>hadoop</category>
         <category>centos</category>
         <category>mapreduce</category>
-        <category>java</category>
-        <category>OutOfMemoryError</category>
-        <category>heap</category>
-        <category>cpasule</category>
-        <category>paper</category>
         <category>kafka</category>
         <category>topic</category>
         <category>partition</category>
+        <category>cpasule</category>
+        <category>paper</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/26/bigdata/kafka/kafka-topic-partition2/</guid>
             <title>kafka主题的分区分配策略（二）</title>
@@ -102,9 +102,15 @@
             <description><![CDATA[ &lt;h1 id=&#34;主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#主题&#34;&gt;#&lt;/a&gt; 主题&lt;/h1&gt;
 &lt;h2 id=&#34;创建主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建主题&#34;&gt;#&lt;/a&gt; 创建主题&lt;/h2&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;bin/kafka-topics.sh --zookeeper localhost:2181/kafka --create --topic topic-demo --partitions 4 --replication-factor 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;查看主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看主题&#34;&gt;#&lt;/a&gt; 查看主题&lt;/h2&gt;
+&lt;h2 id=&#34;查看单个主题信息&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看单个主题信息&#34;&gt;#&lt;/a&gt; 查看单个主题信息&lt;/h2&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;bin/kafka-topics.sh --zookeeper localhost:2181/kafka --describe --topic topic-demo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
- ]]></description>
+&lt;h2 id=&#34;查看当前所有可用主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看当前所有可用主题&#34;&gt;#&lt;/a&gt; 查看当前所有可用主题&lt;/h2&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;bin/kafka-topics.sh --zookeeper localhost:2181/kafka -list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;修改主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改主题&#34;&gt;#&lt;/a&gt; 修改主题&lt;/h2&gt;
+&lt;p&gt;将 topic-demo 分区数修改为 3&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;bin/kafka-topics.sh --zookeeper localhost:2181/kafka --alter --topic topic-demo --partitions 3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;删除主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除主题&#34;&gt;#&lt;/a&gt; 删除主题&lt;/h2&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;bin/kafka-topics.sh --zookeeper localhost:2181/kafka --delete --topic topic-create-api&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
     </channel>
 </rss>

@@ -15,6 +15,9 @@
         <category>nlp</category>
         <category>torchtext</category>
         <category>python</category>
+        <category>java</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
         <category>vmware</category>
         <category>macos</category>
         <category>hbase</category>
@@ -23,14 +26,11 @@
         <category>hadoop</category>
         <category>centos</category>
         <category>mapreduce</category>
-        <category>java</category>
-        <category>OutOfMemoryError</category>
-        <category>heap</category>
-        <category>cpasule</category>
-        <category>paper</category>
         <category>kafka</category>
         <category>topic</category>
         <category>partition</category>
+        <category>cpasule</category>
+        <category>paper</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/26/bigdata/kafka/kafka-topic-partition2/</guid>
             <title>kafka主题的分区分配策略（二）</title>
@@ -102,9 +102,15 @@
             <description><![CDATA[ &lt;h1 id=&#34;主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#主题&#34;&gt;#&lt;/a&gt; 主题&lt;/h1&gt;
 &lt;h2 id=&#34;创建主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建主题&#34;&gt;#&lt;/a&gt; 创建主题&lt;/h2&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;bin/kafka-topics.sh --zookeeper localhost:2181/kafka --create --topic topic-demo --partitions 4 --replication-factor 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;查看主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看主题&#34;&gt;#&lt;/a&gt; 查看主题&lt;/h2&gt;
+&lt;h2 id=&#34;查看单个主题信息&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看单个主题信息&#34;&gt;#&lt;/a&gt; 查看单个主题信息&lt;/h2&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;bin/kafka-topics.sh --zookeeper localhost:2181/kafka --describe --topic topic-demo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
- ]]></description>
+&lt;h2 id=&#34;查看当前所有可用主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看当前所有可用主题&#34;&gt;#&lt;/a&gt; 查看当前所有可用主题&lt;/h2&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;bin/kafka-topics.sh --zookeeper localhost:2181/kafka -list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;修改主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改主题&#34;&gt;#&lt;/a&gt; 修改主题&lt;/h2&gt;
+&lt;p&gt;将 topic-demo 分区数修改为 3&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;bin/kafka-topics.sh --zookeeper localhost:2181/kafka --alter --topic topic-demo --partitions 3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;删除主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除主题&#34;&gt;#&lt;/a&gt; 删除主题&lt;/h2&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;bin/kafka-topics.sh --zookeeper localhost:2181/kafka --delete --topic topic-create-api&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/22/bigdata/hive/hive-Sougou/</guid>
@@ -217,10 +223,10 @@ sed -i &#34;&#34; &#34;s/ /,/g&#34; SogouQ.reduced.new
             <guid isPermalink="true">https://wangjiosw.github.io/2020/03/17/bigdata/mapreduce/%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8Cmapred%E9%97%AE%E9%A2%98/</guid>
             <title>本地运行mapred问题</title>
             <link>https://wangjiosw.github.io/2020/03/17/bigdata/mapreduce/%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8Cmapred%E9%97%AE%E9%A2%98/</link>
+            <category>java</category>
             <category>macos</category>
             <category>hadoop</category>
             <category>mapreduce</category>
-            <category>java</category>
             <pubDate>Tue, 17 Mar 2020 14:58:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;1-问题描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-问题描述&#34;&gt;#&lt;/a&gt; 1. 问题描述&lt;/h1&gt;
 &lt;p&gt;在 hadoop 集群上跑 mapreduce 代码很慢，可以通过设置&lt;/p&gt;

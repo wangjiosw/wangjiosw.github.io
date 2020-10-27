@@ -80,9 +80,9 @@
     <link href="https://wangjiosw.github.io/2020/10/26/bigdata/kafka/topic-partition/"/>
     <id>https://wangjiosw.github.io/2020/10/26/bigdata/kafka/topic-partition/</id>
     <published>2020-10-26T13:36:00.000Z</published>
-    <updated>2020-10-26T13:43:11.148Z</updated>
+    <updated>2020-10-27T02:57:18.576Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="主题"><a class="markdownIt-Anchor" href="#主题">#</a> 主题</h1><h2 id="创建主题"><a class="markdownIt-Anchor" href="#创建主题">#</a> 创建主题</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bin/kafka-topics.sh --zookeeper localhost:2181/kafka --create --topic topic-demo --partitions 4 --replication-factor 1</span><br></pre></td></tr></table></figure><h2 id="查看主题"><a class="markdownIt-Anchor" href="#查看主题">#</a> 查看主题</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bin/kafka-topics.sh --zookeeper localhost:2181/kafka --describe --topic topic-demo</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="主题"><a class="markdownIt-Anchor" href="#主题">#</a> 主题</h1><h2 id="创建主题"><a class="markdownIt-Anchor" href="#创建主题">#</a> 创建主题</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bin/kafka-topics.sh --zookeeper localhost:2181/kafka --create --topic topic-demo --partitions 4 --replication-factor 1</span><br></pre></td></tr></table></figure><h2 id="查看单个主题信息"><a class="markdownIt-Anchor" href="#查看单个主题信息">#</a> 查看单个主题信息</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bin/kafka-topics.sh --zookeeper localhost:2181/kafka --describe --topic topic-demo</span><br></pre></td></tr></table></figure><h2 id="查看当前所有可用主题"><a class="markdownIt-Anchor" href="#查看当前所有可用主题">#</a> 查看当前所有可用主题</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bin/kafka-topics.sh --zookeeper localhost:2181/kafka -list</span><br></pre></td></tr></table></figure><h2 id="修改主题"><a class="markdownIt-Anchor" href="#修改主题">#</a> 修改主题</h2><p>将 topic-demo 分区数修改为 3</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bin/kafka-topics.sh --zookeeper localhost:2181/kafka --alter --topic topic-demo --partitions 3</span><br></pre></td></tr></table></figure><h2 id="删除主题"><a class="markdownIt-Anchor" href="#删除主题">#</a> 删除主题</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bin/kafka-topics.sh --zookeeper localhost:2181/kafka --delete --topic topic-create-api</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
@@ -356,13 +356,13 @@
     <category term="大数据" scheme="https://wangjiosw.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
     
+    <category term="java" scheme="https://wangjiosw.github.io/tags/java/"/>
+    
     <category term="macos" scheme="https://wangjiosw.github.io/tags/macos/"/>
     
     <category term="hadoop" scheme="https://wangjiosw.github.io/tags/hadoop/"/>
     
     <category term="mapreduce" scheme="https://wangjiosw.github.io/tags/mapreduce/"/>
-    
-    <category term="java" scheme="https://wangjiosw.github.io/tags/java/"/>
     
   </entry>
   
