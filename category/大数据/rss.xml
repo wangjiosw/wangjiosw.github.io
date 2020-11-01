@@ -33,7 +33,7 @@
         <category>paper</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/11/01/bigdata/kafka/kafka-dump-log-NoSuchElementException/</guid>
-            <title>kafka-dump-log.sh NoSuchElementException</title>
+            <title>查看分区偏移量文件报错：NoSuchElementException</title>
             <link>https://wangjiosw.github.io/2020/11/01/bigdata/kafka/kafka-dump-log-NoSuchElementException/</link>
             <category>kafka</category>
             <pubDate>Sun, 01 Nov 2020 10:40:00 +0800</pubDate>
