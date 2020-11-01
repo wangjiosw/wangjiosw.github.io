@@ -6,7 +6,7 @@
   <link href="https://wangjiosw.github.io/atom.xml" rel="self"/>
   
   <link href="https://wangjiosw.github.io/"/>
-  <updated>2020-10-26T14:08:55.404Z</updated>
+  <updated>2020-11-01T02:45:09.053Z</updated>
   <id>https://wangjiosw.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>kafka-dump-log.sh NoSuchElementException</title>
+    <link href="https://wangjiosw.github.io/2020/11/01/bigdata/kafka/kafka-dump-log-NoSuchElementException/"/>
+    <id>https://wangjiosw.github.io/2020/11/01/bigdata/kafka/kafka-dump-log-NoSuchElementException/</id>
+    <published>2020-11-01T02:40:00.000Z</published>
+    <updated>2020-11-01T02:45:09.053Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="错误描述"><a class="markdownIt-Anchor" href="#错误描述">#</a> 错误描述</h1><p><a href="http://xn--kafka-dump-log-9v1wl125b.sh">使用 kafka-dump-log.sh</a> 分析 kafka 分区日志的.index 文件时，报错</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">bin/kafka-dump-log.sh --files /kafka/kafka-logs-5dbba1c65ae8/topic-demo-2/00000000000000000000.index </span><br><span class="line">Dumping /kafka/kafka-logs-5dbba1c65ae8/topic-demo-2/00000000000000000000.index</span><br><span class="line">Exception in thread &quot;main&quot; java.util.NoSuchElementException</span><br><span class="line">        at org.apache.kafka.common.utils.AbstractIterator.next(AbstractIterator.java:52)</span><br><span class="line">        at kafka.tools.DumpLogSegments$.$anonfun$dumpIndex$1(DumpLogSegments.scala:140)</span><br><span class="line">        at kafka.tools.DumpLogSegments$.dumpIndex(DumpLogSegments.scala:132)</span><br><span class="line">        at kafka.tools.DumpLogSegments$.$anonfun$main$1(DumpLogSegments.scala:59)</span><br><span class="line">        at kafka.tools.DumpLogSegments$.main(DumpLogSegments.scala:48)</span><br><span class="line">        at kafka.tools.DumpLogSegments.main(DumpLogSegments.scala)</span><br></pre></td></tr></table></figure><h1 id="错误原因"><a class="markdownIt-Anchor" href="#错误原因">#</a> 错误原因</h1><p>日志里面没消息<br><img src="/images/bigdata/kafka/show-index.png" alt=""></p><h1 id="解决方法"><a class="markdownIt-Anchor" href="#解决方法">#</a> 解决方法</h1><p>换一个日志里面有消息的日志对应的.index 文件查看或往该分区写入消息<br><img src="/images/bigdata/kafka/show-index2.png" alt=""></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;错误描述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#错误描述&quot;&gt;#&lt;/a&gt; 错误描述&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://xn--kafka-dump-log-9v1wl125b.sh&quot;&gt;使用 kafka-dump-lo</summary>
+      
+    
+    
+    
+    <category term="大数据" scheme="https://wangjiosw.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+    
+    <category term="kafka" scheme="https://wangjiosw.github.io/tags/kafka/"/>
+    
+  </entry>
   
   <entry>
     <title>kafka主题的分区分配策略（二）</title>
