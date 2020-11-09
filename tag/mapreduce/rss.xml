@@ -31,6 +31,7 @@
         <category>partition</category>
         <category>cpasule</category>
         <category>paper</category>
+        <category>spark</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/21/bigdata/mapreduce/mac-hadoop-jar-problem/</guid>
             <title>Mac 单机集群使用hadoop jar 运行jar包出现的问题</title>

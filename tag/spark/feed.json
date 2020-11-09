@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Technology is a means, not an end • All posts by \"spark\" tag",
+    "description": "",
+    "home_page_url": "https://wangjiosw.github.io",
+    "items": [
+        {
+            "id": "https://wangjiosw.github.io/2020/11/09/bigdata/bigdata/",
+            "url": "https://wangjiosw.github.io/2020/11/09/bigdata/bigdata/",
+            "title": "大数据学习资料",
+            "date_published": "2020-11-09T08:41:00.000Z",
+            "content_html": "<h1 id=\"spark\"><a class=\"markdownIt-Anchor\" href=\"#spark\"></a> Spark</h1>\n<ul>\n<li>环境搭建：<a href=\"https://hub.docker.com/r/singularities/spark\">singularities/spark</a></li>\n<li>学习文档：<a href=\"https://spark.apache.org/docs/2.2.1/rdd-programming-guide.html\">https://spark.apache.org/docs/2.2.1/rdd-programming-guide.html</a></li>\n</ul>\n<h1 id=\"kafka\"><a class=\"markdownIt-Anchor\" href=\"#kafka\"></a> Kafka</h1>\n<ul>\n<li>环境搭建 ：<a href=\"https://hub.docker.com/r/wurstmeister/kafka\">wurstmeister/kafka</a></li>\n<li>学习文档：《深入理解Kafka：核心设计与实践原理》</li>\n</ul>\n",
+            "tags": [
+                "kafka",
+                "spark"
+            ]
+        }
+    ]
+}

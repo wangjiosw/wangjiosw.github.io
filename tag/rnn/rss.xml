@@ -31,6 +31,7 @@
         <category>partition</category>
         <category>cpasule</category>
         <category>paper</category>
+        <category>spark</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/04/20/deep-learning/rnn-pytorch/</guid>
             <title>循环神经网络pytorch实现</title>

@@ -31,6 +31,7 @@
         <category>partition</category>
         <category>cpasule</category>
         <category>paper</category>
+        <category>spark</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/02/29/bigdata/environment/vmware/</guid>
             <title>Mac OS VMware Fusion Centos6.5虚拟机网络设置</title>

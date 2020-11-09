@@ -31,6 +31,7 @@
         <category>partition</category>
         <category>cpasule</category>
         <category>paper</category>
+        <category>spark</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/04/18/deep-learning/matrix-partial/</guid>
             <title>矩阵求导方法</title>

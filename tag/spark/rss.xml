@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Technology is a means, not an end • Posts by &#34;spark&#34; tag</title>
+        <link>https://wangjiosw.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Mon, 09 Nov 2020 16:41:00 +0800</pubDate>
+        <lastBuildDate>Mon, 09 Nov 2020 16:41:00 +0800</lastBuildDate>
+        <category>矩阵求导</category>
+        <category>pytorch</category>
+        <category>RNN</category>
+        <category>GRU</category>
+        <category>LSTM</category>
+        <category>nlp</category>
+        <category>torchtext</category>
+        <category>python</category>
+        <category>java</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
+        <category>vmware</category>
+        <category>macos</category>
+        <category>hbase</category>
+        <category>ntpdate</category>
+        <category>hive</category>
+        <category>hadoop</category>
+        <category>centos</category>
+        <category>mapreduce</category>
+        <category>kafka</category>
+        <category>topic</category>
+        <category>partition</category>
+        <category>cpasule</category>
+        <category>paper</category>
+        <category>spark</category>
+        <item>
+            <guid isPermalink="true">https://wangjiosw.github.io/2020/11/09/bigdata/bigdata/</guid>
+            <title>大数据学习资料</title>
+            <link>https://wangjiosw.github.io/2020/11/09/bigdata/bigdata/</link>
+            <category>kafka</category>
+            <category>spark</category>
+            <pubDate>Mon, 09 Nov 2020 16:41:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;spark&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#spark&#34;&gt;&lt;/a&gt; Spark&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;环境搭建：&lt;a href=&#34;https://hub.docker.com/r/singularities/spark&#34;&gt;singularities/spark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;学习文档：&lt;a href=&#34;https://spark.apache.org/docs/2.2.1/rdd-programming-guide.html&#34;&gt;https://spark.apache.org/docs/2.2.1/rdd-programming-guide.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;kafka&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#kafka&#34;&gt;&lt;/a&gt; Kafka&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;环境搭建 ：&lt;a href=&#34;https://hub.docker.com/r/wurstmeister/kafka&#34;&gt;wurstmeister/kafka&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;学习文档：《深入理解Kafka：核心设计与实践原理》&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
