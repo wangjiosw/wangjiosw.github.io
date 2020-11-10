@@ -23,14 +23,14 @@
     <published>2020-11-09T08:41:00.000Z</published>
     <updated>2020-11-09T08:42:24.380Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="spark"><a class="markdownIt-Anchor" href="#spark"></a> Spark</h1><ul><li>环境搭建：<a href="https://hub.docker.com/r/singularities/spark">singularities/spark</a></li><li>学习文档：<a href="https://spark.apache.org/docs/2.2.1/rdd-programming-guide.html">https://spark.apache.org/docs/2.2.1/rdd-programming-guide.html</a></li></ul><h1 id="kafka"><a class="markdownIt-Anchor" href="#kafka"></a> Kafka</h1><ul><li>环境搭建 ：<a href="https://hub.docker.com/r/wurstmeister/kafka">wurstmeister/kafka</a></li><li>学习文档：《深入理解Kafka：核心设计与实践原理》</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="spark"><a class="markdownIt-Anchor" href="#spark">#</a> Spark</h1><ul><li>环境搭建：<a href="https://hub.docker.com/r/singularities/spark">singularities/spark</a></li><li>学习文档：<a href="https://spark.apache.org/docs/2.2.1/rdd-programming-guide.html">https://spark.apache.org/docs/2.2.1/rdd-programming-guide.html</a></li></ul><h1 id="kafka"><a class="markdownIt-Anchor" href="#kafka">#</a> Kafka</h1><ul><li>环境搭建 ：<a href="https://hub.docker.com/r/wurstmeister/kafka">wurstmeister/kafka</a></li><li>学习文档：《深入理解 Kafka：核心设计与实践原理》</li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;spark&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#spark&quot;&gt;&lt;/a&gt; Spark&lt;/h1&gt;
+    <summary type="html">&lt;h1 id=&quot;spark&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#spark&quot;&gt;#&lt;/a&gt; Spark&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;环境搭建：&lt;a href=&quot;https://hub.docker.com/r/singularities/spar</summary>
+&lt;li&gt;环境搭建：&lt;a href=&quot;https://hub.docker.com/r/singularities/spa</summary>
       
     
     
@@ -38,9 +38,9 @@
     <category term="大数据" scheme="https://wangjiosw.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
     
-    <category term="kafka" scheme="https://wangjiosw.github.io/tags/kafka/"/>
-    
     <category term="spark" scheme="https://wangjiosw.github.io/tags/spark/"/>
+    
+    <category term="kafka" scheme="https://wangjiosw.github.io/tags/kafka/"/>
     
   </entry>
   
@@ -51,13 +51,13 @@
     <published>2020-11-01T02:40:00.000Z</published>
     <updated>2020-11-01T02:50:26.192Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="错误描述"><a class="markdownIt-Anchor" href="#错误描述"></a> 错误描述</h1><p><a href="http://xn--kafka-dump-log-9v1wl125b.sh">使用kafka-dump-log.sh</a> 分析kafka 分区日志的.index文件时，报错</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">bin/kafka-dump-log.sh --files /kafka/kafka-logs-5dbba1c65ae8/topic-demo-2/00000000000000000000.index </span><br><span class="line">Dumping /kafka/kafka-logs-5dbba1c65ae8/topic-demo-2/00000000000000000000.index</span><br><span class="line">Exception in thread &quot;main&quot; java.util.NoSuchElementException</span><br><span class="line">        at org.apache.kafka.common.utils.AbstractIterator.next(AbstractIterator.java:52)</span><br><span class="line">        at kafka.tools.DumpLogSegments$.$anonfun$dumpIndex$1(DumpLogSegments.scala:140)</span><br><span class="line">        at kafka.tools.DumpLogSegments$.dumpIndex(DumpLogSegments.scala:132)</span><br><span class="line">        at kafka.tools.DumpLogSegments$.$anonfun$main$1(DumpLogSegments.scala:59)</span><br><span class="line">        at kafka.tools.DumpLogSegments$.main(DumpLogSegments.scala:48)</span><br><span class="line">        at kafka.tools.DumpLogSegments.main(DumpLogSegments.scala)</span><br></pre></td></tr></table></figure><h1 id="错误原因"><a class="markdownIt-Anchor" href="#错误原因"></a> 错误原因</h1><p>日志里面没消息<br /><img src="/images/bigdata/kafka/show-index.png" alt="" /></p><h1 id="解决方法"><a class="markdownIt-Anchor" href="#解决方法"></a> 解决方法</h1><p>换一个日志里面有消息的日志对应的.index文件查看或往该分区写入消息<br /><img src="/images/bigdata/kafka/show-index2.png" alt="" /></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="错误描述"><a class="markdownIt-Anchor" href="#错误描述">#</a> 错误描述</h1><p><a href="http://xn--kafka-dump-log-9v1wl125b.sh">使用 kafka-dump-log.sh</a> 分析 kafka 分区日志的.index 文件时，报错</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">bin/kafka-dump-log.sh --files /kafka/kafka-logs-5dbba1c65ae8/topic-demo-2/00000000000000000000.index </span><br><span class="line">Dumping /kafka/kafka-logs-5dbba1c65ae8/topic-demo-2/00000000000000000000.index</span><br><span class="line">Exception in thread &quot;main&quot; java.util.NoSuchElementException</span><br><span class="line">        at org.apache.kafka.common.utils.AbstractIterator.next(AbstractIterator.java:52)</span><br><span class="line">        at kafka.tools.DumpLogSegments$.$anonfun$dumpIndex$1(DumpLogSegments.scala:140)</span><br><span class="line">        at kafka.tools.DumpLogSegments$.dumpIndex(DumpLogSegments.scala:132)</span><br><span class="line">        at kafka.tools.DumpLogSegments$.$anonfun$main$1(DumpLogSegments.scala:59)</span><br><span class="line">        at kafka.tools.DumpLogSegments$.main(DumpLogSegments.scala:48)</span><br><span class="line">        at kafka.tools.DumpLogSegments.main(DumpLogSegments.scala)</span><br></pre></td></tr></table></figure><h1 id="错误原因"><a class="markdownIt-Anchor" href="#错误原因">#</a> 错误原因</h1><p>日志里面没消息<br><img src="/images/bigdata/kafka/show-index.png" alt=""></p><h1 id="解决方法"><a class="markdownIt-Anchor" href="#解决方法">#</a> 解决方法</h1><p>换一个日志里面有消息的日志对应的.index 文件查看或往该分区写入消息<br><img src="/images/bigdata/kafka/show-index2.png" alt=""></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;错误描述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#错误描述&quot;&gt;&lt;/a&gt; 错误描述&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;http://xn--kafka-dump-log-9v1wl125b.sh&quot;&gt;使用kafka-dump-log.</summary>
+    <summary type="html">&lt;h1 id=&quot;错误描述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#错误描述&quot;&gt;#&lt;/a&gt; 错误描述&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://xn--kafka-dump-log-9v1wl125b.sh&quot;&gt;使用 kafka-dump-lo</summary>
       
     
     
@@ -409,13 +409,13 @@
     <category term="大数据" scheme="https://wangjiosw.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
     
-    <category term="java" scheme="https://wangjiosw.github.io/tags/java/"/>
-    
     <category term="macos" scheme="https://wangjiosw.github.io/tags/macos/"/>
     
     <category term="hadoop" scheme="https://wangjiosw.github.io/tags/hadoop/"/>
     
     <category term="mapreduce" scheme="https://wangjiosw.github.io/tags/mapreduce/"/>
+    
+    <category term="java" scheme="https://wangjiosw.github.io/tags/java/"/>
     
   </entry>
   

@@ -7,6 +7,8 @@
         <language>en</language>
         <pubDate>Wed, 21 Oct 2020 10:52:00 +0800</pubDate>
         <lastBuildDate>Wed, 21 Oct 2020 10:52:00 +0800</lastBuildDate>
+        <category>spark</category>
+        <category>kafka</category>
         <category>矩阵求导</category>
         <category>pytorch</category>
         <category>RNN</category>
@@ -15,9 +17,6 @@
         <category>nlp</category>
         <category>torchtext</category>
         <category>python</category>
-        <category>java</category>
-        <category>OutOfMemoryError</category>
-        <category>heap</category>
         <category>vmware</category>
         <category>macos</category>
         <category>hbase</category>
@@ -25,13 +24,14 @@
         <category>hive</category>
         <category>hadoop</category>
         <category>centos</category>
-        <category>mapreduce</category>
-        <category>kafka</category>
         <category>topic</category>
         <category>partition</category>
+        <category>mapreduce</category>
+        <category>java</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
         <category>cpasule</category>
         <category>paper</category>
-        <category>spark</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/21/java/jvm/fastjson-heap-oom/</guid>
             <title>使用fastjson时堆溢出</title>

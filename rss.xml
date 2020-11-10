@@ -7,6 +7,8 @@
         <language>en</language>
         <pubDate>Mon, 09 Nov 2020 16:41:00 +0800</pubDate>
         <lastBuildDate>Mon, 09 Nov 2020 16:41:00 +0800</lastBuildDate>
+        <category>spark</category>
+        <category>kafka</category>
         <category>矩阵求导</category>
         <category>pytorch</category>
         <category>RNN</category>
@@ -15,9 +17,6 @@
         <category>nlp</category>
         <category>torchtext</category>
         <category>python</category>
-        <category>java</category>
-        <category>OutOfMemoryError</category>
-        <category>heap</category>
         <category>vmware</category>
         <category>macos</category>
         <category>hbase</category>
@@ -25,29 +24,30 @@
         <category>hive</category>
         <category>hadoop</category>
         <category>centos</category>
-        <category>mapreduce</category>
-        <category>kafka</category>
         <category>topic</category>
         <category>partition</category>
+        <category>mapreduce</category>
+        <category>java</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
         <category>cpasule</category>
         <category>paper</category>
-        <category>spark</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/11/09/bigdata/bigdata/</guid>
             <title>大数据学习资料</title>
             <link>https://wangjiosw.github.io/2020/11/09/bigdata/bigdata/</link>
-            <category>kafka</category>
             <category>spark</category>
+            <category>kafka</category>
             <pubDate>Mon, 09 Nov 2020 16:41:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;spark&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#spark&#34;&gt;&lt;/a&gt; Spark&lt;/h1&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;spark&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#spark&#34;&gt;#&lt;/a&gt; Spark&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;环境搭建：&lt;a href=&#34;https://hub.docker.com/r/singularities/spark&#34;&gt;singularities/spark&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;学习文档：&lt;a href=&#34;https://spark.apache.org/docs/2.2.1/rdd-programming-guide.html&#34;&gt;https://spark.apache.org/docs/2.2.1/rdd-programming-guide.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;kafka&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#kafka&#34;&gt;&lt;/a&gt; Kafka&lt;/h1&gt;
+&lt;h1 id=&#34;kafka&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#kafka&#34;&gt;#&lt;/a&gt; Kafka&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;环境搭建 ：&lt;a href=&#34;https://hub.docker.com/r/wurstmeister/kafka&#34;&gt;wurstmeister/kafka&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;学习文档：《深入理解Kafka：核心设计与实践原理》&lt;/li&gt;
+&lt;li&gt;学习文档：《深入理解 Kafka：核心设计与实践原理》&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
@@ -57,15 +57,15 @@
             <link>https://wangjiosw.github.io/2020/11/01/bigdata/kafka/kafka-dump-log-NoSuchElementException/</link>
             <category>kafka</category>
             <pubDate>Sun, 01 Nov 2020 10:40:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;错误描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#错误描述&#34;&gt;&lt;/a&gt; 错误描述&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;http://xn--kafka-dump-log-9v1wl125b.sh&#34;&gt;使用kafka-dump-log.sh&lt;/a&gt; 分析kafka 分区日志的.index文件时，报错&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;错误描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#错误描述&#34;&gt;#&lt;/a&gt; 错误描述&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;http://xn--kafka-dump-log-9v1wl125b.sh&#34;&gt;使用 kafka-dump-log.sh&lt;/a&gt; 分析 kafka 分区日志的.index 文件时，报错&lt;/p&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;bin/kafka-dump-log.sh --files /kafka/kafka-logs-5dbba1c65ae8/topic-demo-2/00000000000000000000.index &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Dumping /kafka/kafka-logs-5dbba1c65ae8/topic-demo-2/00000000000000000000.index&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Exception in thread &amp;quot;main&amp;quot; java.util.NoSuchElementException&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        at org.apache.kafka.common.utils.AbstractIterator.next(AbstractIterator.java:52)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        at kafka.tools.DumpLogSegments$.$anonfun$dumpIndex$1(DumpLogSegments.scala:140)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        at kafka.tools.DumpLogSegments$.dumpIndex(DumpLogSegments.scala:132)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        at kafka.tools.DumpLogSegments$.$anonfun$main$1(DumpLogSegments.scala:59)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        at kafka.tools.DumpLogSegments$.main(DumpLogSegments.scala:48)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        at kafka.tools.DumpLogSegments.main(DumpLogSegments.scala)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&#34;错误原因&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#错误原因&#34;&gt;&lt;/a&gt; 错误原因&lt;/h1&gt;
-&lt;p&gt;日志里面没消息&lt;br /&gt;
-&lt;img src=&#34;/images/bigdata/kafka/show-index.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决方法&#34;&gt;&lt;/a&gt; 解决方法&lt;/h1&gt;
-&lt;p&gt;换一个日志里面有消息的日志对应的.index文件查看或往该分区写入消息&lt;br /&gt;
-&lt;img src=&#34;/images/bigdata/kafka/show-index2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;错误原因&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#错误原因&#34;&gt;#&lt;/a&gt; 错误原因&lt;/h1&gt;
+&lt;p&gt;日志里面没消息&lt;br&gt;
+&lt;img src=&#34;/images/bigdata/kafka/show-index.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决方法&#34;&gt;#&lt;/a&gt; 解决方法&lt;/h1&gt;
+&lt;p&gt;换一个日志里面有消息的日志对应的.index 文件查看或往该分区写入消息&lt;br&gt;
+&lt;img src=&#34;/images/bigdata/kafka/show-index2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -391,10 +391,10 @@ sed -i &#34;&#34; &#34;s/ /,/g&#34; SogouQ.reduced.new
             <guid isPermalink="true">https://wangjiosw.github.io/2020/03/17/bigdata/mapreduce/%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8Cmapred%E9%97%AE%E9%A2%98/</guid>
             <title>本地运行mapred问题</title>
             <link>https://wangjiosw.github.io/2020/03/17/bigdata/mapreduce/%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8Cmapred%E9%97%AE%E9%A2%98/</link>
-            <category>java</category>
             <category>macos</category>
             <category>hadoop</category>
             <category>mapreduce</category>
+            <category>java</category>
             <pubDate>Tue, 17 Mar 2020 14:58:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;1-问题描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-问题描述&#34;&gt;#&lt;/a&gt; 1. 问题描述&lt;/h1&gt;
 &lt;p&gt;在 hadoop 集群上跑 mapreduce 代码很慢，可以通过设置&lt;/p&gt;
