@@ -38,8 +38,7 @@
             <link>https://wangjiosw.github.io/2020/11/10/bigdata/spark/Passing-Functions-to-Spark/</link>
             <category>spark</category>
             <pubDate>Tue, 10 Nov 2020 10:19:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;passing-functions-to-spark&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#passing-functions-to-spark&#34;&gt;#&lt;/a&gt; Passing Functions to Spark&lt;/h1&gt;
-&lt;blockquote&gt;
+            <description><![CDATA[ &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://spark.apache.org/docs/2.2.1/rdd-programming-guide.html&#34;&gt;https://spark.apache.org/docs/2.2.1/rdd-programming-guide.html&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Spark’s API relies heavily on passing functions in the driver program to run on the cluster. There are two recommended ways to do this:&lt;/p&gt;
