@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wangjiosw.github.io/2020/11/10/bigdata/spark/Passing-Functions-to-Spark/</loc>
+    
+    <lastmod>2020-11-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wangjiosw.github.io/2020/11/09/bigdata/bigdata/</loc>
     
     <lastmod>2020-11-09</lastmod>
@@ -128,7 +135,7 @@
   </url>
   
   <url>
-    <loc>https://wangjiosw.github.io/links/index.html</loc>
+    <loc>https://wangjiosw.github.io/tags/index.html</loc>
     
     <lastmod>2020-10-21</lastmod>
     
@@ -142,14 +149,7 @@
   </url>
   
   <url>
-    <loc>https://wangjiosw.github.io/tags/index.html</loc>
-    
-    <lastmod>2020-10-21</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wangjiosw.github.io/books/index.html</loc>
+    <loc>https://wangjiosw.github.io/links/index.html</loc>
     
     <lastmod>2020-10-21</lastmod>
     
@@ -157,6 +157,13 @@
   
   <url>
     <loc>https://wangjiosw.github.io/categories/index.html</loc>
+    
+    <lastmod>2020-10-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wangjiosw.github.io/books/index.html</loc>
     
     <lastmod>2020-10-21</lastmod>
     

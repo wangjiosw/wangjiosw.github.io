@@ -1,3 +1,4 @@
+https://wangjiosw.github.io/2020/11/10/bigdata/spark/Passing-Functions-to-Spark/
 https://wangjiosw.github.io/2020/11/09/bigdata/bigdata/
 https://wangjiosw.github.io/2020/11/01/bigdata/kafka/kafka-dump-log-NoSuchElementException/
 https://wangjiosw.github.io/2020/10/26/bigdata/kafka/kafka-topic-partition2/

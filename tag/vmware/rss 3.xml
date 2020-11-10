@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Technology is a means, not an end • Posts by &#34;vmware&#34; tag</title>
+        <link>https://wangjiosw.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Sat, 29 Feb 2020 23:25:00 +0800</pubDate>
+        <lastBuildDate>Sat, 29 Feb 2020 23:25:00 +0800</lastBuildDate>
+        <category>矩阵求导</category>
+        <category>pytorch</category>
+        <category>RNN</category>
+        <category>GRU</category>
+        <category>LSTM</category>
+        <category>nlp</category>
+        <category>torchtext</category>
+        <category>python</category>
+        <category>java</category>
+        <category>OutOfMemoryError</category>
+        <category>heap</category>
+        <category>vmware</category>
+        <category>macos</category>
+        <category>hbase</category>
+        <category>ntpdate</category>
+        <category>hive</category>
+        <category>hadoop</category>
+        <category>centos</category>
+        <category>mapreduce</category>
+        <category>kafka</category>
+        <category>topic</category>
+        <category>partition</category>
+        <category>cpasule</category>
+        <category>paper</category>
+        <category>spark</category>
+        <item>
+            <guid isPermalink="true">https://wangjiosw.github.io/2020/02/29/bigdata/environment/vmware/</guid>
+            <title>Mac OS VMware Fusion Centos6.5虚拟机网络设置</title>
+            <link>https://wangjiosw.github.io/2020/02/29/bigdata/environment/vmware/</link>
+            <category>vmware</category>
+            <category>macos</category>
+            <pubDate>Sat, 29 Feb 2020 23:25:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;1-安装vmware虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-安装vmware虚拟机&#34;&gt;#&lt;/a&gt; 1. 安装 vmware 虚拟机&lt;/h1&gt;
+&lt;p&gt;安装 vmware 虚拟机，并新建一个 centos 64 位的虚拟机&lt;/p&gt;
+&lt;h1 id=&#34;2-设置虚拟机网络模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-设置虚拟机网络模式&#34;&gt;#&lt;/a&gt; 2. 设置虚拟机网络模式&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/20200210222413551.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;3-查看vmware的网关和掩码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-查看vmware的网关和掩码&#34;&gt;#&lt;/a&gt; 3. 查看 vmware 的网关和掩码&lt;/h1&gt;
+&lt;p&gt;在 Mac 电脑的终端输入：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cat /Library/Preferences/VMware\ Fusion/vmnet8/nat.conf&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;输出结果如下：&lt;br&gt;
+&lt;img src=&#34;https://img-blog.csdnimg.cn/20200210222624261.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pXb3N3aW4=,size_16,color_FFFFFF,t_70&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+这里的 ip 和 netmask 即为 vmware 虚拟机的网关和掩码&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# NAT gateway address&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ip = 172.16.143.2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;netmask = 255.255.255.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;ip 和 netmask 后面配置 centos 虚拟机的网络时分别对于网关和掩码。&lt;/p&gt;
+&lt;h1 id=&#34;4-配置centos虚拟机的网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-配置centos虚拟机的网络&#34;&gt;#&lt;/a&gt; 4. 配置 centos 虚拟机的网络&lt;/h1&gt;
+&lt;p&gt;在 centos 虚拟机的终端输入：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;vi /etc/sysconfig/network-scripts/ifcfg-eth0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;删除 UUID 和 MAC 地址&lt;/li&gt;
+&lt;li&gt;ONBOOT=yes&lt;/li&gt;
+&lt;li&gt;BOOTPROTO=static&lt;/li&gt;
+&lt;li&gt;IPADDR=172.16.143.101&lt;/li&gt;
+&lt;li&gt;NETMASK=255.255.255.0&lt;/li&gt;
+&lt;li&gt;GATEWAY=172.16.143.2&lt;/li&gt;
+&lt;li&gt;DNS1=172.16.143.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;保存并退出，然后在 centos 虚拟机的终端输入：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;service network restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;ping 一下百度看是否能 ping 通：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ping www.baidu.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
+    </channel>
+</rss>
