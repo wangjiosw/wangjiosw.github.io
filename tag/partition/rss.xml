@@ -32,6 +32,7 @@
         <category>heap</category>
         <category>cpasule</category>
         <category>paper</category>
+        <category>protoType</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/26/bigdata/kafka/kafka-topic-partition2/</guid>
             <title>kafka主题的分区分配策略（二）</title>

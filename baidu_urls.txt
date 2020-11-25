@@ -1,3 +1,4 @@
+https://wangjiosw.github.io/2020/11/25/java/design-patterns/ProtoType/
 https://wangjiosw.github.io/2020/11/10/bigdata/spark/Passing-Functions-to-Spark/
 https://wangjiosw.github.io/2020/11/09/bigdata/bigdata/
 https://wangjiosw.github.io/2020/11/01/bigdata/kafka/kafka-dump-log-NoSuchElementException/

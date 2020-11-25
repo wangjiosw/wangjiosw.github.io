@@ -32,6 +32,7 @@
         <category>heap</category>
         <category>cpasule</category>
         <category>paper</category>
+        <category>protoType</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/10/21/java/jvm/fastjson-heap-oom/</guid>
             <title>使用fastjson时堆溢出</title>

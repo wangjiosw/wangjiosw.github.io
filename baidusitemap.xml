@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://wangjiosw.github.io/2020/11/25/java/design-patterns/ProtoType/</loc>
+    <lastmod>2020-11-25</lastmod>
+  </url>
+  <url>
     <loc>https://wangjiosw.github.io/2020/11/10/bigdata/spark/Passing-Functions-to-Spark/</loc>
-    <lastmod>2020-11-10</lastmod>
+    <lastmod>2020-11-11</lastmod>
   </url>
   <url>
     <loc>https://wangjiosw.github.io/2020/11/09/bigdata/bigdata/</loc>

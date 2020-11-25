@@ -32,6 +32,7 @@
         <category>heap</category>
         <category>cpasule</category>
         <category>paper</category>
+        <category>protoType</category>
         <item>
             <guid isPermalink="true">https://wangjiosw.github.io/2020/02/29/deep-learning/torchtext_use/</guid>
             <title>Torchtext使用教程</title>
